@@ -86,7 +86,8 @@ button {
   -webkit-font-smoothing: antialiased; }
 
 html {
-  font-family: 'HelveticaNeue', sans-serif; }
+  font-family: 'HelveticaNeue', sans-serif;
+  scroll-behavior: smooth; }
 
 .container {
   display: -webkit-box;

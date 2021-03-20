@@ -17,17 +17,17 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">WHY US</a>
+              <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">EXAMPLE</a>
+              <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">CONTRIBUTION</a>
+              <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
             </li>
           </ul>
         </nav>
-        <button class="button">DOCUMENTATION</button>
+        <a href="https://usedapp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
       </div>
     </div>
   </header>
@@ -41,7 +41,7 @@
       </div>
       <img src="./images/hero-image.png" alt="" class="hero-image">
     </section>
-    <section class="section">
+    <section id="whyus" data-anchor="whyus" class="section">
       <div class="container">
         <p class="small-title">Why useDapp?</p>
         <h2 class="title">Simple. Robust. <br> Extendable. Testable.</h2>
@@ -153,7 +153,7 @@
         </div>
       </div>
     </section>
-    <section class="section">
+    <section id="example" data-anchor="example" class="section">
       <div class="container">
         <div class="boxes-row">
           <div class="smaller-wrapper">
@@ -221,16 +221,16 @@ export function App() {
             <div class="footer__menu">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="#" class="nav__link">WHY US</a>
+                  <a href="#whyus" data-destination="whyus" class="nav__link">WHY US</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">EXAMPLE</a>
+                  <a href="#example" data-destination="example" class="nav__link">EXAMPLE</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">CONTRIBUTION</a>
+                  <a href="#contribution" data-destination="contribution" class="nav__link">CONTRIBUTION</a>
                 </li>
                 <li class="nav__item">
-                  <button class="button">DOCUMENTATION</button>
+                  <a href="https://usedapp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
                 </li>
               </ul>
             </div>
@@ -243,6 +243,7 @@ export function App() {
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="js/fullpage.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
       navigation: true,
