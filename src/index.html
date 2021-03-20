@@ -22,9 +22,9 @@
             <li class="nav__item">
               <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
             </li>
-            <li class="nav__item">
+            <!-- <li class="nav__item">
               <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <a href="https://usedapp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
@@ -226,9 +226,9 @@ export function App() {
                 <li class="nav__item">
                   <a href="#example" data-destination="example" class="nav__link">EXAMPLE</a>
                 </li>
-                <li class="nav__item">
+                <!-- <li class="nav__item">
                   <a href="#contribution" data-destination="contribution" class="nav__link">CONTRIBUTION</a>
-                </li>
+                </li> -->
                 <li class="nav__item">
                   <a href="https://usedapp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
                 </li>
@@ -249,6 +249,8 @@ export function App() {
       navigation: true,
       navigationPosition: 'left',
       scrollOverflow: true,
+      normalScrollElements: '.window',
+      keyboardScrolling: false,
     });
   </script>
 </body>
