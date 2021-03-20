@@ -11,6 +11,7 @@
   display: flex
   justify-content: center
   align-items: center
+  width: 100%
 
 .nav__item + .nav__item
   margin-left: 40px
@@ -19,7 +20,7 @@
   display: flex
   justify-content: center
   align-items: center
-  
+
 .nav__link
   font-weight: 500
   font-size: 14px
@@ -27,6 +28,10 @@
   text-align: center
   letter-spacing: 0.11em
   color: #353740
+  transition: all 0.25s ease
+
+.nav__link:hover
+  color: #D75A55
 
 .button
   position: absolute
@@ -42,18 +47,24 @@
   color: #23242A
   border: 1px solid #23242A
   border-radius: 25px
+  transition: all 0.25s ease
+
+.button:hover
+  color: #000000
+  border-color: #D75A55
+  background-color: #D75A55
 
 .main-title
-  margin-bottom: 107px
+  margin-bottom: 96px
   font-family: 'HelveticaNeue-Bold', sans-serif
   font-weight: bold
-  font-size: 49px
-  line-height: 110%
+  font-size: 48px
+  line-height: 1.1
   text-align: center
   color: #000000
-  
+
 .main-title span
-  font-size: 87.931px
-  line-height: 110%
+  font-size: 88px
+  line-height: 1.1
   letter-spacing: -0.03em
   color: #23242A

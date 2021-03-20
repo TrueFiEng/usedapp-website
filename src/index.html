@@ -1,168 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>useDapp</title>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-	<header class="header">
-		<div class="container">
-			<div class="header__row">
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a href="#" class="nav__link">WHY US</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link">EXAMPLE</a>
-						</li>
-						<li class="nav__item">
-							<a href="#" class="nav__link">CONTRIBUTION</a>
-						</li>
-					</ul>
-				</nav>
-				<button class="button">DOCUMENTATION</button>
-			</div>
-		</div>
-	</header>
-	<main id="fullpage">
-		<section class="section">
-			<div class="container">
-				<h1 class="main-title"><span>useDapp</span> <br> Ethereum 🤝 React</h1>
-				<h2 class="title">Framework for rapid <br> Dapp development.</h2>
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<p class="small-title">Why useDapp?</p>
-				<h2 class="title">Simple. Robust. <br> Extendable. Testable.</h2>
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<div class="boxes-row">
-					<div class="box">
-						<h2 class="box__title">Problem</h2>
-						<p class="box__subtitle">A Dapp designed will in mind will:</p>
-						<div class="problem-row">
-							<p class="box__label">UX:</p>
-							<p class="box__label">Development:</p>
-						</div>
-						<div class="box__grid problem-grid">
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">🔄 </div>
-									<h3 class="info__title">Refresh</h3>
-								</div>
-								<p class="info__text">Refresh after a new block arrives</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">✨</div>
-									<h3 class="info__title">Easy to work</h3>
-								</div>
-								<p class="info__text">Work on both mainnet and testnets</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">📺</div>
-									<h3 class="info__title">View mode</h3>
-								</div>
-								<p class="info__text">Work in view mode before connecting a wallet</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">🛡️</div>
-									<h3 class="info__title">Easy to test</h3>
-								</div>
-								<p class="info__text">Be error proof and easyto test</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">✅</div>
-									<h3 class="info__title">Status</h3>
-								</div>
-								<p class="info__text">Show the status of the current transactions</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">🍼</div>
-									<h3 class="info__title">Easy to develop</h3>
-								</div>
-								<p class="info__text">Be easy to develop and extend</p>
-							</div>
-						</div>
-					</div>
-					<div class="box">
-						<h2 class="box__title">Solution</h2>
-						<p class="box__subtitle">useDapp combines the best practices:</p>
-						<div class="box__grid solution-grid">
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">🏗️</div>
-									<h3 class="info__title">Ingredient</h3>
-								</div>
-								<p class="info__text">Uses react hooks as your primary building ingredient</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">📚</div>
-									<h3 class="info__title">Extend</h3>
-								</div>
-								<p class="info__text">Extends easily with custom hooks</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">🚅</div>
-									<h3 class="info__title">Refresh</h3>
-								</div>
-								<p class="info__text">Refresh after a new block arrives</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">💡</div>
-									<h3 class="info__title">Integration</h3>
-								</div>
-								<p class="info__text">Tests integration of UI and blockchain easily</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">🛒</div>
-									<h3 class="info__title">Combine</h3>
-								</div>
-								<p class="info__text">Combines multiple blockchain calls into a single multicall</p>
-							</div>
-							<div class="info">
-								<div class="info__row">
-									<div class="info__icon">🔧</div>
-									<h3 class="info__title">Missing</h3>
-								</div>
-								<p class="info__text">Refresh after a new block arrives</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="section">
-			<div class="container">
-				<h2 class="title">Framework for rapid Dapp development.</h2>
-			</div>
-		</section>
-	</main>
 
-	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-	<script type="text/javascript" src="js/fullpage.js"></script>
-	<script type="text/javascript">
-		var myFullpage = new fullpage('#fullpage', {
-			navigation: true,
-			navigationPosition: 'left',
-			scrollOverflow: true,
-		});
-	</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>useDapp</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">WHY US</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">EXAMPLE</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">CONTRIBUTION</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button">DOCUMENTATION</button>
+      </div>
+    </div>
+  </header>
+  <main id="fullpage">
+    <section class="section">
+      <div class="container container--left">
+        <div class="smaller-wrapper">
+          <h1 class="main-title text--left"><span>useDapp</span> <br> Ethereum 🤝 React</h1>
+          <h2 class="title text--left">Framework for rapid Dapp development.</h2>
+        </div>
+      </div>
+      <img src="./images/hero-image.png" alt="" class="hero-image">
+    </section>
+    <section class="section">
+      <div class="container">
+        <p class="small-title">Why useDapp?</p>
+        <h2 class="title">Simple. Robust. <br> Extendable. Testable.</h2>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="boxes-row">
+          <div class="box">
+            <h2 class="box__title">Problem</h2>
+            <p class="box__subtitle">A Dapp designed will in mind will:</p>
+            <div class="problem-row">
+              <p class="box__label">UX:</p>
+              <p class="box__label">Development:</p>
+            </div>
+            <div class="box__grid problem-grid">
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🔄 </div>
+                  <h3 class="info__title">Refresh</h3>
+                </div>
+                <p class="info__text">Refresh after a new block arrives</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">✨</div>
+                  <h3 class="info__title">Easy to work</h3>
+                </div>
+                <p class="info__text">Work on both mainnet and testnets</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">📺</div>
+                  <h3 class="info__title">View mode</h3>
+                </div>
+                <p class="info__text">Work in view mode before connecting a wallet</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🛡️</div>
+                  <h3 class="info__title">Easy to test</h3>
+                </div>
+                <p class="info__text">Be error proof and easyto test</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">✅</div>
+                  <h3 class="info__title">Status</h3>
+                </div>
+                <p class="info__text">Show the status of the current transactions</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🍼</div>
+                  <h3 class="info__title">Easy to develop</h3>
+                </div>
+                <p class="info__text">Be easy to develop and extend</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <h2 class="box__title">Solution</h2>
+            <p class="box__subtitle">useDapp combines the best practices:</p>
+            <div class="box__grid solution-grid">
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🏗️</div>
+                  <h3 class="info__title">Ingredient</h3>
+                </div>
+                <p class="info__text">Uses react hooks as your primary building ingredient</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">📚</div>
+                  <h3 class="info__title">Extend</h3>
+                </div>
+                <p class="info__text">Extends easily with custom hooks</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🚅</div>
+                  <h3 class="info__title">Refresh</h3>
+                </div>
+                <p class="info__text">Refresh after a new block arrives</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">💡</div>
+                  <h3 class="info__title">Integration</h3>
+                </div>
+                <p class="info__text">Tests integration of UI and blockchain easily</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🛒</div>
+                  <h3 class="info__title">Combine</h3>
+                </div>
+                <p class="info__text">Combines multiple blockchain calls into a single multicall</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🔧</div>
+                  <h3 class="info__title">Missing</h3>
+                </div>
+                <p class="info__text">Refresh after a new block arrives</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="boxes-row">
+          <div class="smaller-wrapper">
+            <h2 class="title text--left">Example</h2>
+            <p class="text">Example app <br> is availiable <a href="#" class="link" target="_blank">here</a> ❤️</p>
+          </div>
+          <div class="window">
+            <pre class="window-pre">
+<code class="code"><span class="code--red">const</span> config: Config = {
+  readOnlyChain: ChainId.Mainnet,
+  readOnlyUrls: {
+    [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
+  },
+}
+  
+ReactDOM.<span class="code--red">render</span>(
+  &lt;React.StrictMode&gt;
+    &lt;DAppProvider config={config}&gt;
+      &lt;App /&gt;
+    &lt;/DAppProvider&gt;
+  &lt;/React.StrictMode&gt;,
+  document.<span class="code--red">getElementById</span>('root')
+)
+  
+export function App() {
+  const { activateBrowserWallet, account } = <span class="code--red">useEthers</span>()
+  return (
+    &lt;div&gt;
+      &lt;button onClick={() =&gt; <span class="code--red">activateBrowserWallet</span>()}&gt;Connect&lt;/button&gt;
+      {account && &lt;p&gt;Account: {account}&lt;/p&gt;}
+    &lt;/div&gt;
+  )
+}
+</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <nav class="footer__nav">
+            <a href="https://ethworks.io/" target="_blank" class="author">
+              Created by
+              <svg class="author__image" x="0px" y="0px" viewBox="0 0 340 40" preserveAspectRatio="xMidYMid meet">
+                <path class="ethword" d="M320.2,37c-2.5,0-5-0.3-7.5-1c-2.3-0.6-4.1-1.4-5.6-2.4l2.4-5.5c1.6,0.9,3.2,1.7,4.9,2.2
+                    c1.9,0.6,3.9,0.9,5.8,0.9c2,0,3.5-0.3,4.7-0.8c1.2-0.6,1.8-1.5,1.8-2.7c0-1-0.5-1.9-1.6-2.6c-1-0.6-2.7-1.2-5.4-1.7
+                    c-3.2-0.6-5.7-1.4-7.4-2.3c-1.7-0.9-2.9-1.9-3.6-3.1s-1-2.7-1-4.4c0-2,0.6-3.8,1.7-5.3c1.1-1.6,2.7-2.9,4.8-3.8
+                    c2.1-0.9,4.5-1.4,7.2-1.4c2.4,0,4.8,0.3,7,1c2.1,0.6,3.8,1.4,5,2.4L331,12c-1.4-0.9-2.9-1.6-4.4-2.1c-1.7-0.6-3.4-0.9-5.2-0.9
+                    c-1.7,0-3.1,0.3-4.2,1s-1.7,1.7-1.7,2.9c0,0.7,0.2,1.3,0.7,1.8c0.4,0.4,1.1,0.9,2.2,1.3c1,0.4,2.5,0.8,4.4,1.2
+                    c3,0.7,5.5,1.5,7.2,2.4s2.9,1.9,3.6,3.1s1,2.6,1,4.3c0,3.2-1.2,5.6-3.7,7.4C328.4,36.1,324.8,37,320.2,37L320.2,37z M197.9,37
+                    c-3.4,0-6.4-0.7-8.9-2.1c-2.5-1.4-4.4-3.4-5.8-5.9c-1.3-2.6-2-5.6-2-9.1c0-3.4,0.7-6.5,2.1-9c1.4-2.5,3.3-4.5,5.8-5.9
+                    s5.5-2.1,8.9-2.1s6.4,0.7,8.9,2.1s4.4,3.3,5.7,5.9c1.3,2.5,2,5.6,2,9s-0.7,6.5-2,9.1s-3.3,4.5-5.7,5.9
+                    C204.3,36.3,201.3,37,197.9,37z M197.9,8.9c-2.7,0-4.9,1-6.4,2.9s-2.3,4.6-2.3,8.2s0.8,6.4,2.3,8.3s3.7,2.9,6.4,2.9s4.9-1,6.4-2.9
+                    s2.3-4.7,2.3-8.3s-0.8-6.3-2.3-8.2C202.8,9.8,200.6,8.9,197.9,8.9z M290.4,36.6L276,20.3v16.3h-8V3.4h8v15.5l14-15.5h9.2
+                    l-14.7,15.7l15.2,17.4L290.4,36.6L290.4,36.6z M247.3,36.6l-4.3-11c-0.6-1.5-2-2.2-4.1-2.2h-3.8v13.3h-7.9V3.4h15.4
+                    c4,0,7,0.9,9,2.5c2,1.7,2.9,4.1,2.9,7.2c0,2.2-0.6,4.1-1.8,5.7c-1.2,1.6-2.8,2.7-5,3.4l-1.9,0.6l1.9,0.4c0.9,0.2,1.7,0.6,2.4,1.2
+                    s1.3,1.5,1.7,2.6l3.8,9.5L247.3,36.6L247.3,36.6z M235,17.6h6.2c2,0,3.5-0.3,4.5-1c1-0.7,1.5-1.8,1.5-3.2c0-1.5-0.5-2.6-1.5-3.2
+                    c-0.9-0.6-2.4-0.9-4.5-0.9H235L235,17.6L235,17.6z M153.5,36.6L146,15.3l-7.7,21.3h-6.5L120,3.4h8.1l7.4,22.6l8-22.6h5.4l7.7,23
+                    l7.7-23h7.5L160,36.6H153.5L153.5,36.6z M100.9,36.6V22.8H86.1v13.8h-7.8V3.4h7.8v13.3h14.8V3.4h7.8v33.1L100.9,36.6L100.9,36.6z
+                    M48.9,36.6V9.7H38.7V3.4h28.5v6.3H57v26.8L48.9,36.6L48.9,36.6z"></path>
+                <path class="eth-e" d="M5,3.4h23.7v6H5V3.4z"></path>
+                <path class="eth-e" d="M5,16.8h23.7v6H5V16.8z"></path>
+                <path class="eth-e" d="M5,31h23.7v6H5V31z"></path>
+              </svg>
+            </a>
+            <div class="footer__menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">WHY US</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">EXAMPLE</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">CONTRIBUTION</a>
+                </li>
+                <li class="nav__item">
+                  <button class="button">DOCUMENTATION</button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      navigation: true,
+      navigationPosition: 'left',
+      scrollOverflow: true,
+    });
+  </script>
 </body>
+
 </html>
