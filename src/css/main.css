@@ -119,40 +119,35 @@ html {
 button, a {
   cursor: pointer; }
 
+.main {
+  position: relative; }
+
+.sections-backgrounds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.section-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  opacity: 0; }
+
+.section-background--active {
+  opacity: 1; }
+
 .section {
   position: relative;
   min-height: 100vh;
   z-index: 1; }
-
-.section:nth-child(1) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFF4D4), to(rgba(255, 255, 255, 0))), #FFFFFF;
-  background: -webkit-linear-gradient(top, #FFF4D4 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
-  background: -o-linear-gradient(top, #FFF4D4 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
-  background: linear-gradient(-180deg, #FFF4D4 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF; }
-
-.section:nth-child(2) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#DCDBFF), to(rgba(255, 255, 255, 0))), #fff;
-  background: -webkit-linear-gradient(top, #DCDBFF 0%, rgba(255, 255, 255, 0) 100%), #fff;
-  background: -o-linear-gradient(top, #DCDBFF 0%, rgba(255, 255, 255, 0) 100%), #fff;
-  background: linear-gradient(180deg, #DCDBFF 0%, rgba(255, 255, 255, 0) 100%), #fff; }
-
-.section:nth-child(3) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#D4EDFF), to(rgba(255, 255, 255, 0))), #fff;
-  background: -webkit-linear-gradient(top, #D4EDFF 0%, rgba(255, 255, 255, 0) 100%), #fff;
-  background: -o-linear-gradient(top, #D4EDFF 0%, rgba(255, 255, 255, 0) 100%), #fff;
-  background: linear-gradient(180deg, #D4EDFF 0%, rgba(255, 255, 255, 0) 100%), #fff; }
-
-.section:nth-child(4) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#DAFFE9), to(rgba(255, 255, 255, 0))), #fff;
-  background: -webkit-linear-gradient(top, #DAFFE9 0%, rgba(255, 255, 255, 0) 100%), #fff;
-  background: -o-linear-gradient(top, #DAFFE9 0%, rgba(255, 255, 255, 0) 100%), #fff;
-  background: linear-gradient(180deg, #DAFFE9 0%, rgba(255, 255, 255, 0) 100%), #fff; }
-
-.section:nth-child(5) {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFE9DA), to(rgba(255, 255, 255, 0))), #fff;
-  background: -webkit-linear-gradient(top, #FFE9DA 0%, rgba(255, 255, 255, 0) 100%), #fff;
-  background: -o-linear-gradient(top, #FFE9DA 0%, rgba(255, 255, 255, 0) 100%), #fff;
-  background: linear-gradient(180deg, #FFE9DA 0%, rgba(255, 255, 255, 0) 100%), #fff; }
 
 .title {
   font-family: 'HelveticaNeue-Bold', sans-serif;

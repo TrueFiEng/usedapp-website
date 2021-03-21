@@ -31,8 +31,8 @@
       </div>
     </div>
   </header>
-  <main id="fullpage">
-    <section class="section">
+  <main id="fullpage" class="main">
+    <section data-sectioncolor="#FFF4D4" class="section">
       <div class="container container--left">
         <div class="smaller-wrapper">
           <h1 class="main-title text--left"><span>useDapp</span> <br> Ethereum 🤝 React</h1>
@@ -41,13 +41,13 @@
       </div>
       <img src="./images/hero-image.png" alt="" class="hero-image">
     </section>
-    <section id="whyus" data-anchor="whyus" class="section">
+    <section data-sectioncolor="#DCDBFF" id="whyus" data-anchor="whyus" class="section">
       <div class="container">
         <p class="small-title">Why useDapp?</p>
         <h2 class="title">Simple. Robust. <br> Extendable. Testable.</h2>
       </div>
     </section>
-    <section class="section">
+    <section data-sectioncolor="#D4EDFF" class="section">
       <div class="container">
         <div class="boxes-row">
           <div class="box">
@@ -153,12 +153,12 @@
         </div>
       </div>
     </section>
-    <section id="example" data-anchor="example" class="section">
+    <section data-sectioncolor="#DAFFE9" id="example" data-anchor="example" class="section">
       <div class="container">
         <div class="boxes-row">
           <div class="smaller-wrapper">
             <h2 class="title text--left">Example</h2>
-            <p class="text">Example app <br> is availiable <a href="#" class="link" target="_blank">here</a> ❤️</p>
+            <p class="text">Example app <br> is availiable <a href="https://example.usedapp.io/" class="link" target="_blank">here</a> ❤️</p>
           </div>
           <div class="window">
             <pre class="window-pre">
@@ -221,13 +221,13 @@ export function App() {
             <div class="footer__menu">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="#whyus" data-destination="whyus" class="nav__link">WHY US</a>
+                  <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#example" data-destination="example" class="nav__link">EXAMPLE</a>
+                  <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
                 </li>
                 <!-- <li class="nav__item">
-                  <a href="#contribution" data-destination="contribution" class="nav__link">CONTRIBUTION</a>
+                  <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
                 </li> -->
                 <li class="nav__item">
                   <a href="https://usedapp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
@@ -239,19 +239,14 @@ export function App() {
       </div>
     </section>
   </main>
+  <div class="sections-backgrounds"></div>
 
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="js/fullpage.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-      navigation: true,
-      navigationPosition: 'left',
-      scrollOverflow: true,
-      normalScrollElements: '.window',
-      keyboardScrolling: false,
-    });
+   
   </script>
 </body>
 
