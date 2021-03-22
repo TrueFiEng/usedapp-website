@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>useDapp</title>
+  <title>useDApp</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -17,7 +17,7 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
+              <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor">PROBLEM & SOLUTION</a>
             </li>
             <li class="nav__item">
               <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
@@ -27,7 +27,7 @@
             </li> -->
           </ul>
         </nav>
-        <a href="https://usedapp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
+        <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
       </div>
     </div>
   </header>
@@ -35,24 +35,24 @@
     <section data-sectioncolor="#FFF4D4" class="section">
       <div class="container container--left">
         <div class="smaller-wrapper">
-          <h1 class="main-title text--left"><span>useDapp</span> <br> Ethereum 🤝 React</h1>
-          <h2 class="title text--left">Framework for rapid Dapp development.</h2>
+          <h1 class="main-title text--left"><span>useDApp</span> <br> Ethereum 🤝 React</h1>
+          <h2 class="title text--left">Framework for rapid DApp development.</h2>
         </div>
       </div>
       <img src="./img/hero-image.png" alt="" class="hero-image">
     </section>
     <section data-sectioncolor="#DCDBFF" id="whyus" data-anchor="whyus" class="section">
       <div class="container">
-        <p class="small-title">Why useDapp?</p>
+        <p class="small-title">Why useDApp?</p>
         <h2 class="title">Simple. Robust. <br> Extendable. Testable.</h2>
       </div>
     </section>
-    <section data-sectioncolor="#D4EDFF" class="section">
+    <section data-sectioncolor="#D4EDFF" id="problem_solution" data-anchor="problem_solution" class="section">
       <div class="container">
         <div class="boxes-row">
           <div class="box">
             <h2 class="box__title">Problem</h2>
-            <p class="box__subtitle">A Dapp designed will in mind will:</p>
+            <p class="box__subtitle">A well designed DApp</p>
             <div class="problem-row">
               <p class="box__label">UX:</p>
               <p class="box__label">Development:</p>
@@ -63,7 +63,7 @@
                   <div class="info__icon">🔄 </div>
                   <h3 class="info__title">Refresh</h3>
                 </div>
-                <p class="info__text">Refresh after a new block arrives</p>
+                <p class="info__text">Refreshes after a new block arrives</p>
               </div>
               <div class="info">
                 <div class="info__row">
@@ -84,7 +84,7 @@
                   <div class="info__icon">🛡️</div>
                   <h3 class="info__title">Easy to test</h3>
                 </div>
-                <p class="info__text">Be error proof and easyto test</p>
+                <p class="info__text">Be error proof and easy to test</p>
               </div>
               <div class="info">
                 <div class="info__row">
@@ -104,14 +104,33 @@
           </div>
           <div class="box">
             <h2 class="box__title">Solution</h2>
-            <p class="box__subtitle">useDapp combines the best practices:</p>
+            <p class="box__subtitle">Combines the best practices</p>
             <div class="box__grid solution-grid">
               <div class="info">
                 <div class="info__row">
                   <div class="info__icon">🏗️</div>
-                  <h3 class="info__title">Ingredient</h3>
+                  <h3 class="info__title">React hooks</h3>
                 </div>
-                <p class="info__text">Uses react hooks as your primary building ingredient</p>
+                <p class="info__text">Uses React hooks as your primary building ingredient</p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🔧</div>
+                  <h3 class="info__title">Modern stack</h3>
+                </div>
+                <p class="info__text">Employs 
+                  <a href="https://github.com/ethers-io/" target="_blank">ethers.js</a>, 
+                  <a href="https://github.com/NoahZinsmeister/web3-react" target="_blank">web3-react</a>, 
+                  <a href="https://github.com/makerdao/multicall" target="_blank">multicall</a> & 
+                  <a href="https://getwaffle.io/" target="_blank">Waffle</a>.
+                  </p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🚅</div>
+                  <h3 class="info__title">Auto refresh</h3>
+                </div>
+                <p class="info__text">Refresh after a new block arrives, wallet or network changes</p>
               </div>
               <div class="info">
                 <div class="info__row">
@@ -122,32 +141,18 @@
               </div>
               <div class="info">
                 <div class="info__row">
-                  <div class="info__icon">🚅</div>
-                  <h3 class="info__title">Refresh</h3>
-                </div>
-                <p class="info__text">Refresh after a new block arrives</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">💡</div>
-                  <h3 class="info__title">Integration</h3>
-                </div>
-                <p class="info__text">Tests integration of UI and blockchain easily</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
                   <div class="info__icon">🛒</div>
-                  <h3 class="info__title">Combine</h3>
+                  <h3 class="info__title">Multicall</h3>
                 </div>
                 <p class="info__text">Combines multiple blockchain calls into a single multicall</p>
               </div>
               <div class="info">
                 <div class="info__row">
-                  <div class="info__icon">🔧</div>
-                  <h3 class="info__title">Missing</h3>
+                  <div class="info__icon">💡</div>
+                  <h3 class="info__title">Tests</h3>
                 </div>
-                <p class="info__text">Refresh after a new block arrives</p>
-              </div>
+                <p class="info__text">Write simple integration tests for UI and blockchain easily</p>
+              </div>              
             </div>
           </div>
         </div>
@@ -158,7 +163,7 @@
         <div class="boxes-row">
           <div class="smaller-wrapper">
             <h2 class="title text--left">Example</h2>
-            <p class="text">Example app <br> is availiable <a href="https://example.usedapp.io/" class="link" target="_blank">here</a> ❤️</p>
+            <p class="text">Test it <a href="https://example.useDApp.io/" class="link" target="_blank">here</a> </p>
           </div>
           <div class="window">
             <pre class="window-pre">
@@ -221,7 +226,7 @@ export function App() {
             <div class="footer__menu">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
+                  <a href="#problem_solution" data-destination="whyus" class="nav__link anchor">PROBLEM & SOLUTION</a>
                 </li>
                 <li class="nav__item">
                   <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
@@ -230,7 +235,7 @@ export function App() {
                   <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
                 </li> -->
                 <li class="nav__item">
-                  <a href="https://usedapp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
+                  <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
                 </li>
               </ul>
             </div>
