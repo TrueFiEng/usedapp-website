@@ -42,8 +42,6 @@ const callback = function(mutationsList, observer) {
 				let currentActiveSection = body.querySelector('.section.active');
 				let currentActiveBackground = sectionsBackgrounds.querySelector(`.section-background[data-backgroundgradient="${currentActiveSection.dataset.sectioncolor.replace('#','')}"]`);
 				currentActiveBackground.classList.add('section-background--active');
-				console.log(currentActiveSection);
-				console.log(currentActiveBackground);
 			}
     }
 };
