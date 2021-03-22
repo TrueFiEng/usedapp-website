@@ -13,11 +13,11 @@ $ yarn
 To run the project run:
 
 ```
-$ gulp
+$ yarn gulp
 ```
 
 To build the project run:
 
 ```
-$ gulp build
+$ yarn gulp build
 ```
