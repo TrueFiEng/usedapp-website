@@ -10,14 +10,14 @@
   font-family: 'HelveticaNeue'
   src: url('../fonts/HelveticaNeue.eot')
   src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg'), url('../fonts/HelveticaNeue.ttf') format('truetype'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.woff2') format('woff2')
-  font-weight: normal
+  font-weight: 400
   font-style: normal
 
 @font-face
   font-family: 'HelveticaNeue-Medium'
   src: url('../fonts/HelveticaNeue-Medium.eot')
   src: url('../fonts/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg'), url('../fonts/HelveticaNeue-Medium.ttf') format('truetype'), url('../fonts/HelveticaNeue-Medium.woff') format('woff'), url('../fonts/HelveticaNeue-Medium.woff2') format('woff2')
-  font-weight: normal
+  font-weight: 500
   font-style: normal
 
 *
@@ -26,33 +26,58 @@
 
 html
   font-family: 'HelveticaNeue', sans-serif
+  scroll-behavior: smooth
 
 .container
+  display: flex
+  flex-direction: column
+  align-items: center
   width: 100%
-  max-width: 1500px
+  max-width: 1350px
   margin: 0 auto
   padding: 0 30px
+  z-index: 2
+
+.container--left
+  align-items: flex-start
+  text-align: left
+
+.smaller-wrapper
+  width: 100%
+  max-width: 548px
+
+
 
 button, a
   cursor: pointer
 
+.main
+  position: relative
+
+.sections-backgrounds
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: -1
+
+.section-background
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  transition: all 0.7s ease
+  opacity: 0
+
+.section-background--active
+  opacity: 1
+
 .section
+  position: relative
   min-height: 100vh
-
-.section:nth-child(1)
-  background: linear-gradient(-180deg, #FFF4D4 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF
-
-.section:nth-child(2)
-  background: linear-gradient(180deg, #DCDBFF 0%, rgba(255, 255, 255, 0) 100%), #fff
-
-.section:nth-child(3)
-  background: linear-gradient(180deg, #D4EDFF 0%, rgba(255, 255, 255, 0) 100%), #fff
-
-.section:nth-child(4)
-  background: linear-gradient(180deg, #DAFFE9 0%, rgba(255, 255, 255, 0) 100%), #fff
-
-.section:nth-child(5)
-  background: linear-gradient(180deg, #FFE9DA 0%, rgba(255, 255, 255, 0) 100%), #fff
+  z-index: 1
 
 .title
   font-family: 'HelveticaNeue-Bold', sans-serif
@@ -69,6 +94,34 @@ button, a
   font-weight: 500
   font-size: 23px
   line-height: 120%
-  letter-spacing: 0.11em
+  letter-spacing: 0.1em
   text-transform: uppercase
   color: #23242A
+
+.text
+  font-size: 40px
+  line-height: 1.25
+  font-weight: 500
+
+.text--left,
+.main-title.text--left
+  text-align: left
+
+.hero-image
+  position: absolute
+  top: 0
+  right: 0
+  height: 100vh
+  max-height: 1000px
+  width: auto
+  max-width: 1000px
+  object-fit: contain
+  z-index: -1
+
+.link,
+.link:visited
+  color: #2f80ed
+  transition: all 0.25s ease
+
+.link:hover 
+  color: #D75A55

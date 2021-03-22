@@ -1,1 +1,63 @@
+.footer
+  display: flex
+  position: absolute
+  bottom: 0
+  align-items: center
+  width: 100%
+  background-color: #151619
+  padding: 16px 0
 
+.footer__nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  
+.footer__nav .nav__link
+  color: #ffffff
+
+.footer__nav .nav__link:hover
+  color: #D75A55
+
+.nav__item > .button
+  position: static
+  color: #ffffff
+  border-color: #ffffff
+  transform: translateY(0)
+
+.nav__item > .button:hover
+  color: #ffffff
+  border-color: #D75A55
+  background-color: #D75A55
+  
+
+.author
+  display: flex
+  flex-direction: column
+  font-size: 12px
+  line-height: 18px
+  font-weight: 500
+  text-transform: uppercase
+  color: #ffffff
+  transition: all 0.25s ease
+
+.author__image
+  height: auto
+  max-height: 20px
+  width: 100%
+  max-width: 166px
+  margin-top: 16px
+
+.ethword,
+.eth-e
+  fill: #ffffff
+  transition: all 0.25s ease
+
+.author:hover
+  color: #D75A55
+
+.author:hover .eth-e
+  fill: #303363
+
+.author:hover .ethword
+  fill: #00a5ff
