@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" href="/img/favicon.ico">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -45,7 +46,11 @@
           <h2 class="title text--left">Framework for rapid DApp development.</h2>
         </div>
       </div>
-      <img src="./img/Artboard 1@2x.png" alt="" class="hero-image">
+      <div class="hero-image">
+        <img src="./img/bottom-cloud.png" alt="" class="hero-image__bottom-cloud animate__animated animate__fadeInBottomLeft">
+        <img src="./img/top-cloud.png" alt="" class="hero-image__top-cloud animate__animated animate__fadeInTopRight">
+        <img src="./img/roket-woman.png" alt="" class="hero-image__roket-woman animate__animated animate__fadeInBottomRight">
+      </div>
     </section>
     <section data-sectioncolor="#DCDBFF" data-anchor="whyus" class="section">
       <div class="container">
@@ -169,7 +174,8 @@
         <div class="two-columns">
           <div class="smaller-wrapper">
             <h2 class="title text--left">Example</h2>
-            <p class="text">Example app <br> is availiable <a href="https://example.useDApp.io/" class="link" target="_blank">here</a> ❤️</p>
+            <p class="text">Example app <br> is availiable <a href="https://example.useDApp.io/" class="link"
+                target="_blank">here</a> <span class="inline-block animate__animated animate__heartBeat animate__infinite">❤️</span></p>
           </div>
           <div class="window">
             <pre class="window-pre">
@@ -316,7 +322,8 @@ export function App() {
                   <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
                 </li>
                 <li class="nav__item">
-                  <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor">PROBLEM & SOLUTION</a>
+                  <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor">PROBLEM &
+                    SOLUTION</a>
                 </li>
                 <li class="nav__item">
                   <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
