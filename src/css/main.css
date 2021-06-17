@@ -114,7 +114,7 @@ html {
 
 .smaller-wrapper {
   width: 100%;
-  max-width: 548px; }
+  max-width: 556px; }
 
 button, a {
   cursor: pointer; }
@@ -158,6 +158,15 @@ button, a {
   letter-spacing: -0.03em;
   color: #23242A; }
 
+.subtitle {
+  margin-bottom: 24px;
+  font-family: 'HelveticaNeue-Bold', sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #23242A; }
+
 .small-title {
   margin-bottom: 24px;
   font-family: 'HelveticaNeue-Medium';
@@ -196,14 +205,17 @@ button, a {
 
 .hero-image {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 50%;
+  right: 50%;
   height: 100vh;
-  max-height: 1000px;
+  max-height: 600px;
   width: auto;
-  max-width: 1000px;
+  max-width: 600px;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-transform: translate(100%, -50%);
+      -ms-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
   z-index: -1; }
 
 .link,
@@ -287,9 +299,9 @@ button, a {
   transition: all 0.25s ease; }
 
 .button:hover {
-  color: #000000;
-  border-color: #D75A55;
-  background-color: #D75A55; }
+  color: #ffffff;
+  border-color: #23242A;
+  background-color: #23242A; }
 
 .main-title {
   margin-bottom: 96px;
@@ -344,7 +356,10 @@ button, a {
           border-radius: 12px; }
 
 .box--more-space {
-  padding: 24px 32px; }
+  padding: 20px 32px; }
+
+.box--more-space .box__subtitle {
+  margin-bottom: 12px; }
 
 .box--inline {
   display: -webkit-inline-box;
@@ -360,6 +375,13 @@ button, a {
           box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1);
   -webkit-border-radius: 12px;
           border-radius: 12px; }
+
+.box--inline .info__row {
+  gap: 4px;
+  margin-bottom: 0;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
 
 .box__title {
   margin-bottom: 16px;
