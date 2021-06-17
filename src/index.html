@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/img/favicon.ico">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
 </head>
 
 <body>
@@ -18,14 +19,15 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor">PROBLEM & SOLUTION</a>
+              <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor">PROBLEM &
+                SOLUTION</a>
             </li>
             <li class="nav__item">
               <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
             </li>
-            <!-- <li class="nav__item">
+            <li class="nav__item">
               <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
-            </li> -->
+            </li>
           </ul>
         </nav>
         <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
@@ -50,7 +52,7 @@
     </section>
     <section data-sectioncolor="#D4EDFF" id="problem_solution" data-anchor="problem_solution" class="section">
       <div class="container">
-        <div class="boxes-row">
+        <div class="two-columns">
           <div class="box">
             <h2 class="box__title">Problem</h2>
             <p class="box__subtitle">A well-designed DApp</p>
@@ -119,19 +121,19 @@
                   <div class="info__icon">🔧</div>
                   <h3 class="info__title">Modern stack</h3>
                 </div>
-                <p class="info__text">Employs 
-                  <a href="https://github.com/ethers-io/" target="_blank">ethers.js</a>, 
-                  <a href="https://github.com/NoahZinsmeister/web3-react" target="_blank">web3-react</a>, 
-                  <a href="https://github.com/makerdao/multicall" target="_blank">multicall</a> & 
-                  <a href="https://getwaffle.io/" target="_blank">Waffle</a>.
-                  </p>
+                <p class="info__text">Employs
+                  <a href="https://github.com/ethers-io/" class="link" target="_blank">ethers.js</a>,
+                  <a href="https://github.com/NoahZinsmeister/web3-react" class="link" target="_blank">web3-react</a>,
+                  <a href="https://github.com/makerdao/multicall" class="link" target="_blank">multicall</a> &
+                  <a href="https://getwaffle.io/" class="link" target="_blank">Waffle</a>
+                </p>
               </div>
               <div class="info">
                 <div class="info__row">
                   <div class="info__icon">🚅</div>
                   <h3 class="info__title">Auto refresh</h3>
                 </div>
-                <p class="info__text">Refreshes after a new block arrives, wallet or network changes</p>
+                <p class="info__text">Refreshes after blocks, wallet or network changes</p>
               </div>
               <div class="info">
                 <div class="info__row">
@@ -153,7 +155,7 @@
                   <h3 class="info__title">Tests</h3>
                 </div>
                 <p class="info__text">Simple integration tests for UI and blockchain</p>
-              </div>              
+              </div>
             </div>
           </div>
         </div>
@@ -161,7 +163,7 @@
     </section>
     <section data-sectioncolor="#DAFFE9" id="example" data-anchor="example" class="section">
       <div class="container">
-        <div class="boxes-row">
+        <div class="two-columns">
           <div class="smaller-wrapper">
             <h2 class="title text--left">Example</h2>
             <p class="text">Test it <a href="https://example.useDApp.io/" class="link" target="_blank">here</a> </p>
@@ -196,6 +198,88 @@ export function App() {
 </code></pre>
           </div>
         </div>
+      </div>
+    </section>
+    <section data-sectioncolor="#FFE9DA" id="contribution" data-anchor="contribution" class="section">
+      <div class="container">
+        <h2 class="title">Contribution</h2>
+        <p class="small-title">Contributions are always welcome,<br>no matter how large or small.</p>
+        <div class="two-columns">
+          <div class="box box--more-space">
+            <h3 class="box__subtitle">Before you issue pull request</h3>
+            <div class="box__rows">
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🧪</div>
+                  <h3 class="info__title info__title--small">Make sure all tests pass</h3>
+                </div>
+                <p class="info__text">To run tests type: <code class="code--inline">yarn test</code></p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🧪</div>
+                  <h3 class="info__title info__title--small">Make sure linter passes</h3>
+                </div>
+                <p class="info__text">To run linter type: <code class="code--inline">yarn lint</code></p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">📔</div>
+                  <h3 class="info__title info__title--small">Make sure you have test coverage for any new features</h3>
+                </div>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">📖</div>
+                  <h3 class="info__title info__title--small">Before contributing, please read the code of conduct and
+                    contribution policy.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box box--more-space">
+            <h3 class="box__subtitle">Building documentation</h3>
+            <div class="box__rows">
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">⚙️</div>
+                  <h3 class="info__title info__title--small">
+                    <a href="https://www.sphinx-doc.org/en/master/usage/installation.html" class="link" target="_blank">
+                      Install Sphinx
+                    </a> to build documentation
+                  </h3>
+                </div>
+                <p class="info__text"><code class="code--inline">cd docs</code>, <code
+                    class="code--inline">make html</code></p>
+              </div>
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">🐍</div>
+                  <h3 class="info__title info__title--small">
+                    Before building documentation for the first time you may have to install required python packages
+                  </h3>
+                </div>
+                <p class="info__text"><code class="code--inline">pip3 install -r docs/requirements.txt</code></p>
+              </div>
+            </div>
+          </div>
+          <div class="box--inline">
+            <div class="box__rows">
+              <div class="info">
+                <div class="info__row">
+                  <div class="info__icon">📑</div>
+                  <h3 class="info__title info__title--small">
+                    License
+                  </h3>
+                </div>
+                <p class="info__text"> useDapp is released under the <a href="https://opensource.org/licenses/MIT"
+                    class="link" target="_blank">MIT License</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
       <div class="footer">
         <div class="container">
@@ -232,9 +316,9 @@ export function App() {
                 <li class="nav__item">
                   <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
                 </li>
-                <!-- <li class="nav__item">
+                <li class="nav__item">
                   <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
-                </li> -->
+                </li>
                 <li class="nav__item">
                   <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
                 </li>
@@ -247,12 +331,11 @@ export function App() {
   </main>
   <div class="sections-backgrounds"></div>
 
-  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="js/fullpage.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript">
-   
+
   </script>
 </body>
 
