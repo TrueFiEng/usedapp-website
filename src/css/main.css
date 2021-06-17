@@ -391,7 +391,7 @@ button, a {
 
 .box__rows {
   display: grid;
-  grid-row-gap: 16px; }
+  grid-row-gap: 12px; }
 
 .box__rows .info {
   max-width: 100%; }
