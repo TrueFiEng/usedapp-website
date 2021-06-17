@@ -14,7 +14,7 @@
   width: 100%
 
 .nav__item + .nav__item
-  margin-left: 40px
+  margin-left: 32px
 
 .nav__list
   display: flex
@@ -26,12 +26,20 @@
   font-size: 14px
   line-height: 24px
   text-align: center
-  letter-spacing: 0.11em
+  letter-spacing: 0.1em
   color: #353740
+  text-stroke: 0.08em transparent
+  -webkit-text-stroke: 0.08em transparent
   transition: all 0.25s ease
 
 .nav__link:hover
   color: #D75A55
+  text-stroke: 0.08em #D75A55
+  -webkit-text-stroke: 0.08em #353740
+
+.nav__item.active .nav__link
+  text-stroke: 0.08em #353740
+  -webkit-text-stroke: 0.08em #353740
 
 .button
   position: absolute
@@ -55,7 +63,7 @@
   background-color: #23242A
 
 .main-title
-  margin-bottom: 96px
+  margin-bottom: 56px
   font-family: 'HelveticaNeue-Bold', sans-serif
   font-weight: bold
   font-size: 48px

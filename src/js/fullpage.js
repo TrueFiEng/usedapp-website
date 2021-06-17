@@ -107,8 +107,8 @@
       // Creating some defaults, extending them with any options that were provided
       options = deepExtend({
           //navigation
-          menu: false,
-          anchors:[],
+          menu: '#header-menu',
+          anchors:['about', 'whyus', 'problem_solution', 'example', 'contribution'],
           lockAnchors: false,
           navigation: false,
           navigationPosition: 'right',

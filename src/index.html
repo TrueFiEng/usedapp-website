@@ -17,15 +17,18 @@
     <div class="container">
       <div class="header__row">
         <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
+          <ul id="header-menu" class="nav__list">
+            <li data-menuanchor="whyus" class="nav__item">
+              <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
+            </li>
+            <li data-menuanchor="problem_solution" class="nav__item">
               <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor">PROBLEM &
                 SOLUTION</a>
             </li>
-            <li class="nav__item">
+            <li data-menuanchor="example" class="nav__item">
               <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
             </li>
-            <li class="nav__item">
+            <li data-menuanchor="contribution" class="nav__item">
               <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
             </li>
           </ul>
@@ -34,7 +37,7 @@
       </div>
     </div>
   </header>
-  <main id="fullpage" class="main">
+  <main id="fullpage" class="main" data-anchor="about">
     <section data-sectioncolor="#FFF4D4" class="section">
       <div class="container container--left">
         <div class="smaller-wrapper">
@@ -44,13 +47,13 @@
       </div>
       <img src="./img/Artboard 1@2x.png" alt="" class="hero-image">
     </section>
-    <section data-sectioncolor="#DCDBFF" id="whyus" data-anchor="whyus" class="section">
+    <section data-sectioncolor="#DCDBFF" data-anchor="whyus" class="section">
       <div class="container">
         <p class="small-title">Why useDApp?</p>
         <h2 class="title">Simple. Robust. <br> Extendable. Testable.</h2>
       </div>
     </section>
-    <section data-sectioncolor="#D4EDFF" id="problem_solution" data-anchor="problem_solution" class="section">
+    <section data-sectioncolor="#D4EDFF" data-anchor="problem_solution" class="section">
       <div class="container">
         <div class="two-columns">
           <div class="box">
@@ -161,7 +164,7 @@
         </div>
       </div>
     </section>
-    <section data-sectioncolor="#DAFFE9" id="example" data-anchor="example" class="section">
+    <section data-sectioncolor="#DAFFE9" data-anchor="example" class="section">
       <div class="container">
         <div class="two-columns">
           <div class="smaller-wrapper">
@@ -200,7 +203,7 @@ export function App() {
         </div>
       </div>
     </section>
-    <section data-sectioncolor="#FFE9DA" id="contribution" data-anchor="contribution" class="section">
+    <section data-sectioncolor="#FFE9DA" data-anchor="contribution" class="section">
       <div class="container">
         <h3 class="subtitle">Contributions are always welcome,<br>no matter how large or small.</h3>
         <div class="two-columns">
@@ -310,7 +313,10 @@ export function App() {
             <div class="footer__menu">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="#problem_solution" data-destination="whyus" class="nav__link anchor">PROBLEM & SOLUTION</a>
+                  <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor">PROBLEM & SOLUTION</a>
                 </li>
                 <li class="nav__item">
                   <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
