@@ -47,3 +47,18 @@ const callback = function(mutationsList, observer) {
 };
 const observer = new MutationObserver(callback);
 observer.observe(body, config);
+
+const codes = body.querySelectorAll('code');
+
+codes.forEach((code) => {
+	const numberOfLines = code.textContent.split("\n").length;
+	code.dataset.lines = numberOfLines;
+	const linesHolder = document.createElement("span");
+	linesHolder.classList.add('code__lines');
+	let linesString = ``
+	for (let i = 1; i < numberOfLines; i++) {
+		linesString = linesString + `${i}<br/>`
+	}
+	linesHolder.innerHTML = linesString;
+	code.appendChild(linesHolder);
+});
