@@ -64,21 +64,24 @@ button {
   src: url("../fonts/HelveticaNeue-Bold.eot");
   src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.woff2") format("woff2");
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: 'HelveticaNeue';
   src: url("../fonts/HelveticaNeue.eot");
   src: url("../fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue.svg#HelveticaNeue") format("svg"), url("../fonts/HelveticaNeue.ttf") format("truetype"), url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: 'HelveticaNeue-Medium';
   src: url("../fonts/HelveticaNeue-Medium.eot");
   src: url("../fonts/HelveticaNeue-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Medium.svg#HelveticaNeue-Medium") format("svg"), url("../fonts/HelveticaNeue-Medium.ttf") format("truetype"), url("../fonts/HelveticaNeue-Medium.woff") format("woff"), url("../fonts/HelveticaNeue-Medium.woff2") format("woff2");
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -211,10 +214,8 @@ button, a {
   position: absolute;
   top: 50%;
   right: 50%;
-  height: 100vh;
-  max-height: 600px;
-  width: 100%;
-  max-width: 600px;
+  height: 500px;
+  width: 600px;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transform: translate(100%, -50%);
@@ -237,8 +238,7 @@ button, a {
   position: absolute;
   top: 10%;
   left: 10%;
-  height: 100%;
-  max-height: 500px; }
+  height: 100%; }
 
 .hero-image__top-cloud__wrapper {
   right: 10%;
@@ -251,8 +251,7 @@ button, a {
 .hero-image__top-cloud__wrapper,
 .hero-image__bottom-cloud__wrapper {
   position: absolute;
-  height: 100%;
-  max-height: 100px;
+  height: 80px;
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease; }
@@ -278,7 +277,7 @@ button, a {
 
 .link,
 .link:visited {
-  color: #2f80ed;
+  color: #1964C3;
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease; }
