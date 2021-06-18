@@ -220,6 +220,8 @@ button, a {
   -webkit-transform: translate(100%, -50%);
       -ms-transform: translate(100%, -50%);
           transform: translate(100%, -50%);
+  -webkit-filter: drop-shadow(12px 12px 48px #E7CBCC);
+          filter: drop-shadow(12px 12px 48px #E7CBCC);
   z-index: -1; }
 
 .hero-image__wrapper {
