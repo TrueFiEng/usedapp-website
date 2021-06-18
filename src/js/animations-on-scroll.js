@@ -1,18 +1,22 @@
 const allAnimatedElements = body.querySelectorAll('.animate__animated');
+let currentAnimatedSection = body.querySelector('.section.active');
+let currentAnimatedElements = currentAnimatedSection.querySelectorAll('.animate__animated');
+
+const showAnimations = () => {
+	currentAnimatedElements.forEach((animatedElement) => {
+		let elementAnimationsList = animatedElement.dataset.animations.split(' ');
+		animatedElement.classList.add(...elementAnimationsList);
+	});
+};
+
+showAnimations();
 
 const animationsCallback = function(mutationsList, observer) {
     for(const mutation of mutationsList) {
 			if (mutation.type === 'attributes') {
-				let currentAnimatedSection = body.querySelector('.section.active');
-				allAnimatedElements.forEach((elementFromAll) => {
-					let elementAnimationsList = elementFromAll.dataset.animations.split(' ');
-					elementFromAll.classList.remove(...elementAnimationsList);
-				});
-				let currentAnimatedElements = currentAnimatedSection.querySelectorAll('.animate__animated');
-				currentAnimatedElements.forEach((animatedElement) => {
-					let elementAnimationsList = animatedElement.dataset.animations.split(' ');
-					animatedElement.classList.add(...elementAnimationsList);
-				});
+				currentAnimatedSection = body.querySelector('.section.active');
+				currentAnimatedElements = currentAnimatedSection.querySelectorAll('.animate__animated');
+				showAnimations();
 			}
     }
 };
