@@ -51,6 +51,9 @@ html
   width: 100%
   max-width: 556px
 
+  +media(l)
+    max-width: 100%
+
 button, a
   cursor: pointer
 
@@ -147,6 +150,13 @@ button, a
   transform: translate(100%, -50%)
   filter: drop-shadow(12px 12px 48px #E7CBCC)
   z-index: -1
+
+  +media(l)
+    position: static
+    top: unset
+    right: unset
+    margin: auto
+    transform: translate(0)
 
 .hero-image__wrapper
   position: relative

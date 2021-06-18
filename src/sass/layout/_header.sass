@@ -7,11 +7,14 @@
   z-index: 1
 
 .header__row
-  position: relative
   display: flex
+  position: relative
   justify-content: center
   align-items: center
   width: 100%
+
+  +media(l)
+    justify-content: space-between
 
 .nav__item + .nav__item
   margin-left: 32px
@@ -62,6 +65,10 @@
   border: 1px solid #23242A
   border-radius: 25px
   transition: all 0.25s ease
+
+  +media(l)
+    position: static
+    transform: translateY(0)
 
 .button:hover
   color: #ffffff

@@ -11,6 +11,9 @@
   grid-column-gap: 24px
   grid-row-gap: 24px
 
+  +media(l)
+    grid-template-columns: 1fr
+
 .boxes-row + .boxes-row
   margin-top: 24px
 
@@ -51,6 +54,9 @@
   line-height: 48px
   text-align: center
   color: #23242A
+  
+  +media(l)
+    text-align: left
 
 .box__subtitle
   margin-bottom: 24px
@@ -58,6 +64,9 @@
   line-height: 32px
   text-align: center
   color: #23242A
+
+  +media(l)
+    text-align: left
 
 .box__small-subtitle
   margin-bottom: auto
@@ -89,6 +98,9 @@
 
 .info
   max-width: 192px
+  
+  +media(l)
+    max-width: 100%
 
 .info__row
   display: flex
