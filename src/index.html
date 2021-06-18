@@ -34,7 +34,7 @@
             </li>
           </ul>
         </nav>
-        <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
+        <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" class="button" title="useDapp documentation">DOCUMENTATION</a>
       </div>
     </div>
   </header>
@@ -42,26 +42,44 @@
     <section data-sectioncolor="#FFF4D4" class="section">
       <div class="container container--left">
         <div class="smaller-wrapper">
-          <h1 class="main-title text--left"><span>useDApp</span> <br> Ethereum 🤝 React</h1>
+          <h1 class="main-title text--left"><span>useDApp</span> <br> Ethereum <span data-animations="animate__shakeY"
+              class="inline-block animate__animated">🤝</span> React</h1>
           <h2 class="title text--left">Framework for rapid DApp development.</h2>
         </div>
       </div>
       <div class="hero-image">
-        <img src="./img/bottom-cloud.png" alt="" class="hero-image__bottom-cloud animate__animated animate__fadeInBottomLeft">
-        <img src="./img/top-cloud.png" alt="" class="hero-image__top-cloud animate__animated animate__fadeInTopRight">
-        <img src="./img/roket-woman.png" alt="" class="hero-image__roket-woman animate__animated animate__fadeInBottomRight">
+        <img src="./img/bottom-cloud.png" alt="" data-animations="animate__fadeInBottomLeft"
+          class="hero-image__bottom-cloud animate__animated">
+        <img src="./img/top-cloud.png" alt="" data-animations="animate__fadeInTopRight"
+          class="hero-image__top-cloud animate__animated">
+        <img src="./img/roket-woman.png" alt="" data-animations="animate__fadeInBottomRight"
+          class="hero-image__roket-woman animate__animated">
       </div>
     </section>
     <section data-sectioncolor="#DCDBFF" data-anchor="whyus" class="section">
       <div class="container">
         <p class="small-title">Why useDApp?</p>
-        <h2 class="title">Simple. Robust. <br> Extendable. Testable.</h2>
+        <h2 class="title">
+          <span data-animations="animate__fadeInLeft" class="inline-block animate__animated">
+            Simple.
+          </span>
+          <span data-animations="animate__fadeInRight" style="animation-delay: 0.15s;" class="inline-block animate__animated animate__fast">
+            Robust.
+          </span>
+          <br>
+          <span data-animations="animate__fadeInUp" style="animation-delay: 0.3s;" class="inline-block animate__animated animate__fast">
+            Extendable.
+          </span>
+          <span data-animations="animate__fadeInRight" style="animation-delay: 0.45s;" class="inline-block animate__animated animate__fast">
+            Testable.
+          </span>
+        </h2>
       </div>
     </section>
     <section data-sectioncolor="#D4EDFF" data-anchor="problem_solution" class="section">
       <div class="container">
         <div class="two-columns">
-          <div class="box">
+          <div data-animations="animate__fadeInLeft" class="box animate__animated">
             <h2 class="box__title">Problem</h2>
             <p class="box__subtitle">A well-designed DApp</p>
             <div class="problem-row">
@@ -113,7 +131,7 @@
               </div>
             </div>
           </div>
-          <div class="box">
+          <div data-animations="animate__fadeInRight" style="animation-delay: 0.15s;" class="box animate__animated">
             <h2 class="box__title">Solution</h2>
             <p class="box__subtitle">Combines the best practices</p>
             <div class="box__grid solution-grid">
@@ -130,10 +148,10 @@
                   <h3 class="info__title">Modern stack</h3>
                 </div>
                 <p class="info__text">Employs
-                  <a href="https://github.com/ethers-io/" class="link" target="_blank">ethers.js</a>,
-                  <a href="https://github.com/NoahZinsmeister/web3-react" class="link" target="_blank">web3-react</a>,
-                  <a href="https://github.com/makerdao/multicall" class="link" target="_blank">multicall</a> &
-                  <a href="https://getwaffle.io/" class="link" target="_blank">Waffle</a>
+                  <a href="https://github.com/ethers-io/" class="link" target="_blank" title="ethers.js GitHub repositories">ethers.js</a>,
+                  <a href="https://github.com/NoahZinsmeister/web3-react" class="link" target="_blank" title="web3-react GitHub repository">web3-react</a>,
+                  <a href="https://github.com/makerdao/multicall" class="link" target="_blank" title="multicall GitHub repository by MakerDAO">multicall</a> &
+                  <a href="https://getwaffle.io/" class="link" target="_blank" title="Ours waffle GitHub repository">Waffle</a>
                 </p>
               </div>
               <div class="info">
@@ -175,9 +193,10 @@
           <div class="smaller-wrapper">
             <h2 class="title text--left">Example</h2>
             <p class="text">Example app <br> is availiable <a href="https://example.useDApp.io/" class="link"
-                target="_blank">here</a> <span class="inline-block animate__animated animate__heartBeat animate__infinite">❤️</span></p>
+                target="_blank" title="useDApp example application">here</a> <span data-animations="animate__heartBeat animate__infinite"
+                class="inline-block animate__animated">❤️</span></p>
           </div>
-          <div class="window">
+          <div data-animations="animate__slideInRight" class="window animate__animated">
             <pre class="window-pre">
 <code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
   readOnlyChain: ChainId.Mainnet,
@@ -213,7 +232,7 @@ export function App() {
       <div class="container">
         <h3 class="subtitle">Contributions are always welcome,<br>no matter how large or small.</h3>
         <div class="two-columns">
-          <div class="box box--more-space">
+          <div data-animations="animate__slideInLeft" style="animation-delay: 0.15s;" class="box box--more-space animate__animated">
             <h3 class="box__subtitle">Before you issue pull request</h3>
             <div class="box__rows">
               <div class="info">
@@ -245,14 +264,14 @@ export function App() {
               </div>
             </div>
           </div>
-          <div class="box box--more-space">
+          <div data-animations="animate__slideInRight" class="box box--more-space animate__animated">
             <h3 class="box__subtitle">Building documentation</h3>
             <div class="box__rows">
               <div class="info">
                 <div class="info__row info__row--small">
                   <div class="info__icon">⚙️</div>
                   <h3 class="info__title">
-                    <a href="https://www.sphinx-doc.org/en/master/usage/installation.html" class="link" target="_blank">
+                    <a href="https://www.sphinx-doc.org/en/master/usage/installation.html" class="link" target="_blank" title="Sphinx installation guide">
                       Install Sphinx
                     </a> to build documentation
                   </h3>
@@ -271,7 +290,7 @@ export function App() {
               </div>
             </div>
           </div>
-          <div class="box--inline">
+          <div data-animations="animate__slideInUp" style="animation-delay: 0.3s;" class="box--inline animate__animated">
             <div class="box__rows">
               <div class="info">
                 <div class="info__row info__row--small">
@@ -292,7 +311,7 @@ export function App() {
       <div class="footer">
         <div class="container">
           <nav class="footer__nav">
-            <a href="https://ethworks.io/" target="_blank" class="author">
+            <a href="https://ethworks.io/" target="_blank" class="author" title="Ethworks website homepage">
               Created by
               <svg class="author__image" x="0px" y="0px" viewBox="0 0 340 40" preserveAspectRatio="xMidYMid meet">
                 <path class="ethword" d="M320.2,37c-2.5,0-5-0.3-7.5-1c-2.3-0.6-4.1-1.4-5.6-2.4l2.4-5.5c1.6,0.9,3.2,1.7,4.9,2.2
@@ -332,7 +351,7 @@ export function App() {
                   <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
                 </li>
                 <li class="nav__item">
-                  <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" class="button">DOCUMENTATION</a>
+                  <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" title="useDapp documentation" class="button">DOCUMENTATION</a>
                 </li>
               </ul>
             </div>
@@ -346,6 +365,8 @@ export function App() {
   <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="js/fullpage.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/code-lines.js"></script>
+  <script type="text/javascript" src="js/animations-on-scroll.js"></script>
   <script type="text/javascript">
 
   </script>
