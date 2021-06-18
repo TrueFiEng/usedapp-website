@@ -336,11 +336,17 @@ button, a {
 .nav__link:hover {
   color: #D75A55;
   text-stroke: 0.08em #D75A55;
-  -webkit-text-stroke: 0.08em #353740; }
+  -webkit-text-stroke: 0.08em #D75A55; }
 
 .nav__item.active .nav__link {
+  color: #353740;
   text-stroke: 0.08em #353740;
   -webkit-text-stroke: 0.08em #353740; }
+
+.nav__item.active .nav__link:hover {
+  color: #D75A55;
+  text-stroke: 0.08em #D75A55;
+  -webkit-text-stroke: 0.08em #D75A55; }
 
 .button {
   position: absolute;
