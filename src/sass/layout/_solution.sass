@@ -16,6 +16,9 @@
 
   +media(m)
     padding: 0
+  
+  +media(s)
+    grid-row-gap: 12px
 
 .boxes-row + .boxes-row
   margin-top: 24px
@@ -32,12 +35,25 @@
 
   +media(m)
     padding: 16px 24px
+  
+  +media(s)
+    padding: 8px 12px
 
 .box--more-space
   padding: 20px 32px
 
+  +media(s)
+    padding: 8px 12px
+
 .box--more-space .box__subtitle
   margin-bottom: 12px
+
+  +media(m)
+    margin-bottom: 8px
+
+  +media(s)
+    font-size: 12px
+    line-height: 16px
 
 .box--inline
   display: inline-flex
@@ -68,6 +84,11 @@
     font-size: 24px
     line-height: 32px
     margin-bottom: 12px
+  
+  +media(s)
+    font-size: 16px
+    line-height: 24px
+    margin-bottom: 4px
 
 .box__subtitle
   margin-bottom: 24px
@@ -83,6 +104,10 @@
     font-size: 16px
     line-height: 24px
     margin-bottom: 8px
+
+  +media(s)
+    font-size: 12px
+    line-height: 16px
 
 .box__small-subtitle
   margin-bottom: auto
@@ -101,9 +126,16 @@
     grid-column-gap: 24px
     grid-row-gap: 12px
 
+  +media(s)
+    grid-template-columns: 1fr
+    grid-row-gap: 8px
+
 .box__rows
   display: grid
   grid-row-gap: 12px
+
+  +media(s)
+    grid-row-gap: 8px
 
 .box__rows .info
   max-width: 100%
@@ -131,6 +163,9 @@
 
   +media(m)
     margin-bottom: 4px
+  
+  +media(s)
+    margin-bottom: 0px
 
 .info__icon
   margin-right: 16px
@@ -140,6 +175,11 @@
     margin-right: 8px
     font-size: 16px
     line-height: 24px
+  
+  +media(s)
+    margin-right: 4px
+    font-size: 14px
+    line-height: 16px
 
 .info__title
   font-weight: bold
@@ -151,14 +191,27 @@
     font-size: 16px
     line-height: 24px
 
+  +media(s)
+    font-size: 14px
+    line-height: 16px
+
 .info__row.info__row--small .info__title
   font-weight: bold
   font-size: 16px
   line-height: 24px
   color: #23242A
 
+  +media(s)
+    font-size: 14px
+    line-height: 16px
+
 .info__row.info__row--small .info__icon
   line-height: 24px
+
+  +media(s)
+    margin-right: 4px
+    font-size: 14px
+    line-height: 16px
 
 .info__text
   font-size: 14px
@@ -173,3 +226,6 @@
 
   +media(m)
     margin-bottom: 8px
+  
+  +media(s)
+    display: none

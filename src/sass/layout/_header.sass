@@ -16,13 +16,13 @@
     mask-image: linear-gradient(90deg, transparent 10px, white 20px, white 100%)
     transform: translateX(100%)
     transition: all 0.25s ease
-    
+
     .container
       height: 100%
 
     .header__row
       justify-content: center
-    
+
     .header__row,
     .nav__list
       flex-direction: column
@@ -34,6 +34,10 @@
 
     &.is-active
       transform: translateX(0)
+
+  +media(s)
+    background-image: linear-gradient(90deg, transparent 0px, 0px #FFFFFFBF, #FFFFFFBF 100%)
+    mask-image: linear-gradient(90deg, transparent 0px, white 0px, white 100%)
 
 .header__row
   display: flex
@@ -122,12 +126,16 @@
   font-size: 48px
   line-height: 1.1
   text-align: center
-  color: #000000
+  color: #23242A
   cursor: default
 
   +media(m)
     font-size: 28px
     margin-bottom: 32px
+
+  +media(s)
+    font-size: 16px
+    margin-bottom: 16px
 
 .main-title__large
   font-size: 88px
@@ -137,3 +145,7 @@
 
   +media(m)
     font-size: 64px
+
+  +media(s)
+    font-size: 36px
+    line-height: 44px
