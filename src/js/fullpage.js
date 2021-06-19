@@ -138,7 +138,7 @@
           offsetSections: false,
           resetSliders: false,
           fadingEffect: false,
-          normalScrollElements: '.window, .window__pre, .code',
+          normalScrollElements: '.window, .window__pre, .code, .section--with-footer',
           scrollOverflow: true,
           scrollOverflowReset: false,
           scrollOverflowHandler: window.fp_scrolloverflow ? window.fp_scrolloverflow.iscrollHandler : null,
