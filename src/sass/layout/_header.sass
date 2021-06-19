@@ -6,6 +6,35 @@
   padding-top: 24px
   z-index: 1
 
+  +media(m)
+    left: auto
+    right: 0
+    height: 100%
+    padding: 36px
+    backdrop-filter: blur(12px)
+    background-image: linear-gradient(90deg, transparent 10px, 20px #FFFFFFBF, #FFFFFFBF 100%)
+    mask-image: linear-gradient(90deg, transparent 10px, white 20px, white 100%)
+    transform: translateX(100%)
+    transition: all 0.25s ease
+    
+    .container
+      height: 100%
+
+    .header__row
+      justify-content: center
+    
+    .header__row,
+    .nav__list
+      flex-direction: column
+      height: 100%
+      gap: 24px
+
+    .nav__item + .nav__item
+      margin-left: 0
+
+    &.is-active
+      transform: translateX(0)
+
 .header__row
   display: flex
   position: relative
@@ -15,6 +44,11 @@
 
   +media(l)
     justify-content: space-between
+
+.nav__item
+  +media(m)
+    display: flex
+    width: 100%
 
 .nav__item + .nav__item
   margin-left: 32px
@@ -34,6 +68,12 @@
   text-stroke: 0.08em transparent
   -webkit-text-stroke: 0.08em transparent
   transition: all 0.25s ease
+
+  +media(l)
+    display: flex
+    justify-content: center
+    width: 100%
+    font-weight: bold
 
 .nav__link:hover
   color: #D75A55
@@ -85,9 +125,15 @@
   color: #000000
   cursor: default
 
+  +media(m)
+    font-size: 28px
+    margin-bottom: 32px
 
-.main-title span
+.main-title__large
   font-size: 88px
   line-height: 1.1
   letter-spacing: -0.03em
   color: #23242A
+
+  +media(m)
+    font-size: 64px

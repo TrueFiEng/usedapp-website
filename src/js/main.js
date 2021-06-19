@@ -7,6 +7,8 @@ var myFullpage = new fullpage('#fullpage', {
 });
 
 let body = document.querySelector('body');
+let header = body.querySelector('.header');
+let burger = body.querySelector('.burger');
 let anchors = body.querySelectorAll('.anchor');
 let sections = body.querySelectorAll('.section');
 let sectionsBackgrounds = body.querySelector('.sections-backgrounds');
@@ -28,7 +30,22 @@ body.addEventListener('click', (event) => {
 	if (event.target.classList.contains('anchor')) {
 		event.preventDefault();
 		let destination = event.target.dataset.destination;
+		burger.classList.remove('is-active');
+		header.classList.remove('is-active');
+		fullpage_api.setAllowScrolling(true);
 		fullpage_api.moveTo(destination);
+	} else if (event.target == burger ) {
+		event.preventDefault();
+
+		if (burger.classList.contains('is-active')) {
+			burger.classList.remove('is-active');
+			header.classList.remove('is-active');
+			fullpage_api.setAllowScrolling(true);
+		} else {
+			burger.classList.add('is-active');
+			header.classList.add('is-active');
+			fullpage_api.setAllowScrolling(false);
+		}
 	}
 })
 
