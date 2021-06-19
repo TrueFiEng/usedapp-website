@@ -10,6 +10,10 @@
   +media(l)
     padding: 32px 0 24px
 
+  +media(m)
+    padding: 0
+    height: 64px
+
 .footer__nav
   display: flex
   justify-content: space-between
@@ -41,6 +45,9 @@
 .footer__menu
   +media(l)
     align-self: flex-end
+    
+  +media(m)
+    display: none
 
 .author
   display: flex
@@ -58,6 +65,9 @@
   width: 100%
   max-width: 166px
   margin-top: 16px
+
+  +media(m)
+    margin-top: 4px
 
 .ethword,
 .eth-e

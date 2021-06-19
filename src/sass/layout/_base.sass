@@ -46,6 +46,20 @@ html
   padding: 0 44px
   z-index: 2
 
+  +media(l)
+    justify-content: center
+    max-width: 100vw
+    height: 100%
+    min-height: 100%
+
+  +media(m)
+    padding: 0 32px
+
+.container--near-footer
+
+  +media(m)
+    padding: 56px 32px 64px
+
 .container--left
   align-items: flex-start
   text-align: left
@@ -99,7 +113,7 @@ button, a
   cursor: default
 
   +media(m)
-    font-size: 64px
+    font-size: 60px
 
 .subtitle
   margin-bottom: 24px
@@ -221,3 +235,18 @@ button, a
 
 .link:hover
   color: #D75A55
+
+.br-none
+  +media(m)
+    display: none
+
+body #fp-nav.fp-left
+  +media(m)
+    left: 2px
+
+body .fp-scroller
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-height: 100%
+  

@@ -14,6 +14,9 @@
   +media(l)
     grid-template-columns: 1fr
 
+  +media(m)
+    padding: 0
+
 .boxes-row + .boxes-row
   margin-top: 24px
 
@@ -26,6 +29,9 @@
   background: #FFFFFF
   box-shadow: 10px 10px 50px 3px rgba(39, 92, 141, 0.1)
   border-radius: 12px
+
+  +media(m)
+    padding: 16px 24px
 
 .box--more-space
   padding: 20px 32px
@@ -58,6 +64,11 @@
   +media(l)
     text-align: left
 
+  +media(m)
+    font-size: 24px
+    line-height: 32px
+    margin-bottom: 12px
+
 .box__subtitle
   margin-bottom: 24px
   font-size: 20px
@@ -67,6 +78,11 @@
 
   +media(l)
     text-align: left
+
+  +media(m)
+    font-size: 16px
+    line-height: 24px
+    margin-bottom: 8px
 
 .box__small-subtitle
   margin-bottom: auto
@@ -80,6 +96,10 @@
   grid-template-columns: 1fr 1fr
   grid-column-gap: 24px
   grid-row-gap: 24px
+  
+  +media(m)
+    grid-column-gap: 24px
+    grid-row-gap: 12px
 
 .box__rows
   display: grid
@@ -96,6 +116,9 @@
   text-transform: uppercase
   color: #23242A
 
+  +media(m)
+    font-size: 12px
+
 .info
   max-width: 192px
   
@@ -106,15 +129,27 @@
   display: flex
   margin-bottom: 8px
 
+  +media(m)
+    margin-bottom: 4px
+
 .info__icon
   margin-right: 16px
   line-height: 32px
+
+  +media(m)
+    margin-right: 8px
+    font-size: 16px
+    line-height: 24px
 
 .info__title
   font-weight: bold
   font-size: 20px
   line-height: 32px
   color: #23242A
+
+  +media(m)
+    font-size: 16px
+    line-height: 24px
 
 .info__row.info__row--small .info__title
   font-weight: bold
@@ -135,3 +170,6 @@
   grid-template-columns: 1fr 1fr
   column-gap: 24px
   margin-bottom: 24px
+
+  +media(m)
+    margin-bottom: 8px
