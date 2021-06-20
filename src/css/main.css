@@ -134,14 +134,12 @@ html {
 
 @media (max-width: 900px) {
   .container--near-footer {
-    padding: 56px 32px 0px;
-    padding-bottom: 0px;
+    padding: 56px 32px 64px;
     margin-bottom: 64px; } }
 
 @media (max-width: 600px) {
   .container--near-footer {
-    padding: 36px 16px 0px;
-    padding-bottom: 0px;
+    padding: 36px 16px 52px;
     margin-bottom: 52px; } }
 
 .container--left {
