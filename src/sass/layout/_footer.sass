@@ -1,6 +1,6 @@
 .footer
   display: flex
-  position: fixed
+  position: absolute
   bottom: 0
   align-items: center
   width: 100%
@@ -8,11 +8,7 @@
   padding: 8px 0
 
   +media(m)
-    padding: 0
-    height: 48px
-
-  +media(s)
-    height: 40px
+    display: none
 
 .footer .container
   +media(s)
@@ -48,11 +44,11 @@
   color: #ffffff
   border-color: #D75A55
   background-color: #D75A55
-  
+
 .footer__menu
   +media(l)
     align-self: flex-end
-    
+
   +media(m)
     display: none
 
@@ -74,12 +70,29 @@
     padding: 8px 0 4px
     line-height: 12px
 
+.author--mobile
+  display: none
+  flex-direction: row
+  align-items: center
+  height: 100%
+  gap: 8px
+  padding: 16px 24px
+  line-height: 12px
+  background-color: #151619
+  border-radius: 12px
+
+  +media(m)
+    display: flex
+
+  +media(s)
+    padding: 12px 16px
+
 .author__image
   height: auto
   max-height: 16px
   width: 100%
   max-width: 120px
-  
+
   +media(s)
     margin-bottom: 4px
     width: fit-content
