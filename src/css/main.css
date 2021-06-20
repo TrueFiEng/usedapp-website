@@ -134,13 +134,11 @@ html {
 
 @media (max-width: 900px) {
   .container--near-footer {
-    padding: 56px 32px 64px;
-    margin-bottom: 64px; } }
+    padding: 56px 32px 60px; } }
 
 @media (max-width: 600px) {
   .container--near-footer {
-    padding: 36px 16px 52px;
-    margin-bottom: 52px; } }
+    padding: 36px 16px 52px; } }
 
 .container--left {
   -webkit-box-align: start;
@@ -1101,14 +1099,11 @@ body .fp-scroller {
           align-items: center;
   width: 100%;
   background-color: #151619;
-  padding: 16px 0; }
-  @media (max-width: 1200px) {
-    .footer {
-      padding: 32px 0 24px; } }
+  padding: 8px 0; }
   @media (max-width: 900px) {
     .footer {
       padding: 0;
-      height: 64px; } }
+      height: 48px; } }
   @media (max-width: 600px) {
     .footer {
       height: 40px; } }
@@ -1136,16 +1131,6 @@ body .fp-scroller {
       -ms-flex-align: center;
           align-items: center;
   width: 100%; }
-  @media (max-width: 1200px) {
-    .footer__nav {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
-      gap: 36px;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start; } }
   @media (max-width: 600px) {
     .footer__nav {
       -webkit-box-orient: horizontal;
@@ -1210,27 +1195,22 @@ body .fp-scroller {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
+      gap: 8px;
       height: 100%;
       padding: 8px 0 4px;
       line-height: 12px; } }
 
 .author__image {
   height: auto;
-  max-height: 20px;
+  max-height: 16px;
   width: 100%;
-  max-width: 166px;
-  margin-top: 16px; }
-  @media (max-width: 900px) {
-    .author__image {
-      margin-top: 4px; } }
+  max-width: 120px; }
   @media (max-width: 600px) {
     .author__image {
-      margin-top: 0px;
       margin-bottom: 4px;
       width: -webkit-fit-content;
       width: -moz-fit-content;
-      width: fit-content;
-      max-height: 16px; } }
+      width: fit-content; } }
 
 .ethword,
 .eth-e {
