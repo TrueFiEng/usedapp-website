@@ -59,7 +59,7 @@ html
     padding: 0 32px
 
   +media(s)
-    padding: 36px 16px 36px
+    padding: 88px 24px 46px
 
 .container--near-footer
 
@@ -67,7 +67,7 @@ html
     padding: 56px 32px 24px
   
   +media(s)
-    padding: 36px 16px 12px
+    padding: 88px 24px 12px
 
 .container--left
   align-items: flex-start
@@ -80,10 +80,9 @@ html
   +media(l)
     max-width: 100%
 
-.section--main
-  +media(s)
-    .smaller-wrapper
-      max-width: 224px
+.smaller-wrapper .text
+  +media(m)
+    text-align: center
 
 button, a
   cursor: pointer
@@ -130,7 +129,7 @@ button, a
     font-size: 60px
 
   +media(s)
-    font-size: 24px
+    font-size: 32px
     margin-bottom: 8px
 
 .subtitle
@@ -143,9 +142,9 @@ button, a
   color: #23242A
 
   +media(s)
-    font-size: 18px
-    line-height: 24px
-    margin-bottom: 8px
+    font-size: 32px
+    line-height: 38px
+    margin-bottom: 32px
 
 .small-title
   margin-bottom: 24px
@@ -159,8 +158,9 @@ button, a
   color: #23242A
 
   +media(s)
-    font-size: 16px
-    margin-bottom: 8px
+    font-size: 14px
+    line-height: 16px
+    margin-bottom: 16px
 
 .smallest-title
   margin-bottom: 16px
@@ -190,6 +190,15 @@ button, a
 .text--left,
 .main-title.text--left
   text-align: left
+
+  +media(m)
+    text-align: center
+
+.section.section--main .title
+  +media(s)
+    max-width: 212px
+    margin-left: auto
+    margin-right: auto
 
 .hero-image
   position: absolute
@@ -282,6 +291,9 @@ button, a
 body #fp-nav.fp-left
   +media(m)
     left: 2px
+
+  +media(s)
+    display: none
 
 body #fp-nav ul, .fp-slidesNav ul 
   display: flex

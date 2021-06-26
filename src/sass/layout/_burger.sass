@@ -2,16 +2,20 @@
   display: none
   justify-content: center
   align-items: center
-  width: 48px
-  height: 48px
+  width: 24px
+  height: 24px
   position: absolute
-  right: 16px
-  top: 8px
+  left: 24px
+  top: 24px
+  padding: 3px
   transition: all 0.25s ease
   overflow: visible
   cursor: pointer
   z-index: 50
   filter: invert(21%) sepia(5%) saturate(1265%) hue-rotate(192deg) brightness(90%) contrast(90%)
+
+  &.is-active
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%)
 
   &,
   &.is-active
@@ -20,12 +24,6 @@
 
   +media(m)
     display: flex
-
-  +media(s)
-    right: 12px
-    width: 28px
-    height: 28px
-    padding: 4px
 
 .burger-box
   display: flex
@@ -48,22 +46,16 @@
   pointer-events: none
 
   &::before
-    top: -10px
+    top: -6px
     pointer-events: none
-
-    +media(s)
-      top: -6px
 
   &::after
-    bottom: -10px
+    bottom: -6px
     pointer-events: none
-
-    +media(s)
-      bottom: -6px
 
 .burger-inner, .burger-inner::before, .burger-inner::after
   width: 100%
-  height: 4px
+  height: 2px
   background-color: #000
   border-radius: 100px
   position: absolute
@@ -72,37 +64,23 @@
   transition-timing-function: ease
   pointer-events: none
 
-  +media(s)
-    height: 2px
-
 .burger-inner::before, .burger-inner::after
   content: ""
   display: block
 
-.burger--spin
-
+.burger--arrowalt
   .burger-inner
-    transition-duration: 0.22s
-    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19)
-
     &::before
-      transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in
-
+      transition: top 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1)
     &::after
-      transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19)
-
+      transition: bottom 0.1s 0.1s ease, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1)
   &.is-active
     .burger-inner
-      transform: rotate(225deg)
-      transition-delay: 0.12s
-      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
-
       &::before
         top: 0
-        opacity: 0
-        transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out
-
+        transform: translate3d(-4px, -4px, 0) rotate(-45deg) scale(0.7, 1)
+        transition: top 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22)
       &::after
         bottom: 0
-        transform: rotate(-90deg)
-        transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1)
+        transform: translate3d(-4px, 4px, 0) rotate(45deg) scale(0.7, 1)
+        transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22)

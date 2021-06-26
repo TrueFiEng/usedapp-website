@@ -7,18 +7,15 @@
   z-index: 1
 
   +media(m)
-    left: auto
-    right: 0
     height: 100%
-    padding: 36px
-    backdrop-filter: blur(12px)
-    background-image: linear-gradient(90deg, transparent 10px, 20px #FFFFFFBF, #FFFFFFBF 100%)
-    mask-image: linear-gradient(90deg, transparent 10px, white 20px, white 100%)
-    transform: translateX(100%)
+    padding: 64px 24px 16px
+    background-color: #23242A
+    transform: translateX(-100%)
     transition: all 0.25s ease
 
     .container
       height: 100%
+      padding: 0
 
     .header__row
       justify-content: center
@@ -27,7 +24,7 @@
     .nav__list
       flex-direction: column
       height: 100%
-      gap: 24px
+      gap: 40px
 
     .nav__item + .nav__item
       margin-left: 0
@@ -35,9 +32,8 @@
     &.is-active
       transform: translateX(0)
 
-  +media(s)
-    background-image: linear-gradient(90deg, transparent 0px, 0px #FFFFFFBF, #FFFFFFBF 100%)
-    mask-image: linear-gradient(90deg, transparent 0px, white 0px, white 100%)
+    .button
+      display: none
 
 .header__row
   display: flex
@@ -79,6 +75,13 @@
     width: 100%
     font-weight: bold
 
+  +media(m)
+    color: #fff
+    font-size: 24px
+    line-height: 32px
+    font-weight: 700
+
+
 .nav__link:hover
   color: #D75A55
   text-stroke: 0.08em #D75A55
@@ -89,17 +92,26 @@
   text-stroke: 0.08em #353740
   -webkit-text-stroke: 0.08em #353740
 
+  +media(m)
+    color: #fff
+    text-stroke: 0.08em #fff
+    -webkit-text-stroke: 0.08em #fff
+
 .nav__item.active .nav__link:hover
   color: #D75A55
   text-stroke: 0.08em #D75A55
   -webkit-text-stroke: 0.08em #D75A55
 
 .button
+  display: flex
+  justify-content: center
+  align-items: center
   position: absolute
   top: 50%
   right: 0
   transform: translateY(-50%)
-  padding: 13.5px 32px
+  height: 48px
+  padding: 4px 32px
   font-weight: bold
   font-size: 14px
   line-height: normal
@@ -113,6 +125,32 @@
   +media(l)
     position: static
     transform: translateY(0)
+
+  +media(m)
+    position: absolute
+    top: 16px
+    right: 24px
+    height: 40px
+
+.button.button--mobile-fixed
+  display: none
+  position: fixed
+  top: 16px
+  right: 24px
+  z-index: 50
+
+  &:hover
+  &.burger-opened:hover
+    color: #D75A55
+    border-color: #D75A55
+
+  &.burger-opened
+    color: #ffffff
+    border-color: #ffffff
+    background-color: transparent
+  
+  +media(m)
+    display: flex
 
 .button:hover
   color: #ffffff
@@ -130,12 +168,14 @@
   cursor: default
 
   +media(m)
-    font-size: 28px
+    width: 100%
     margin-bottom: 32px
+    font-size: 24px
+    line-height: 1
+    text-align: center
 
   +media(s)
-    font-size: 16px
-    margin-bottom: 16px
+    margin-bottom: 24px
 
 .main-title__large
   font-size: 88px
@@ -144,8 +184,5 @@
   color: #23242A
 
   +media(m)
-    font-size: 64px
-
-  +media(s)
-    font-size: 36px
-    line-height: 44px
+    font-size: 32px
+    line-height: 56px
