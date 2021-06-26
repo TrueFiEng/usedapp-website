@@ -1277,3 +1277,25 @@ body .fp-scroller {
 
 .author:hover .ethword {
   fill: #00a5ff; }
+
+.author.author--mobile-menu {
+  display: none;
+  position: absolute;
+  bottom: 32px;
+  height: auto;
+  padding: 0;
+  opacity: 0.4; }
+  .author.author--mobile-menu:hover {
+    opacity: 1; }
+  @media (max-width: 900px) {
+    .author.author--mobile-menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }

@@ -110,3 +110,19 @@
 
 .author:hover .ethword
   fill: #00a5ff
+
+.author.author--mobile-menu
+  display: none
+  position: absolute
+  bottom: 32px
+  height: auto
+  padding: 0
+  opacity: 0.4
+
+  &:hover
+    opacity: 1
+
+  +media(m)
+    display: flex
+    flex-direction: column
+    align-items: center
