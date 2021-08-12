@@ -221,6 +221,15 @@ button, a {
       font-size: 32px;
       margin-bottom: 8px; } }
 
+.title-fullpage {
+  font-family: 'HelveticaNeue-Bold', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #23242A; }
+
 .subtitle {
   margin-bottom: 24px;
   font-family: 'HelveticaNeue-Bold', sans-serif;
