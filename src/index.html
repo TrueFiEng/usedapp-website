@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>useDApp | Ethereum and React cooperating</title>
+    <meta name="title" content="useDApp | Ethereum and React cooperating" />
+    <meta
+      name="description"
+      content="useDApp is framework for rapid Dapp development. Simple. Robust. Extendable. Testable."
+    />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>useDApp | Ethereum and React cooperating</title>
-  <meta name="title" content="useDApp | Ethereum and React cooperating">
-  <meta name="description"
-    content="useDApp is framework for rapid Dapp development. Simple. Robust. Extendable. Testable.">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/img/favicon.ico">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__row">
-        <nav class="nav">
-          <ul id="header-menu" class="nav__list">
-            <li data-menuanchor="whyus" class="nav__item">
-              <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
-            </li>
-            <li data-menuanchor="problem_solution" class="nav__item">
-              <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor">PROBLEM &
-                SOLUTION</a>
-            </li>
-            <li data-menuanchor="example" class="nav__item">
-              <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
-            </li>
-            <li data-menuanchor="contribution" class="nav__item">
-              <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
-            </li>
-          </ul>
-        </nav>
-        <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" class="button"
-          title="useDapp documentation">DOCUMENTATION</a>
-        <a href="https://ethworks.io/" target="_blank" class="animate__animated author author--mobile-menu"
-          title="Ethworks website homepage" data-animations="animate__slideInUp" style="animation-delay: 0.45s;">
-          Created by
-          <svg class="author__image" x="0px" y="0px" viewBox="0 0 340 40" preserveAspectRatio="xMidYMid meet">
-            <path class="ethword" d="M320.2,37c-2.5,0-5-0.3-7.5-1c-2.3-0.6-4.1-1.4-5.6-2.4l2.4-5.5c1.6,0.9,3.2,1.7,4.9,2.2
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <nav class="nav">
+            <ul id="header-menu" class="nav__list">
+              <li data-menuanchor="whyus" class="nav__item">
+                <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
+              </li>
+              <li data-menuanchor="problem_solution" class="nav__item">
+                <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor"
+                  >PROBLEM & SOLUTION</a
+                >
+              </li>
+              <li data-menuanchor="example" class="nav__item">
+                <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
+              </li>
+              <li data-menuanchor="contribution" class="nav__item">
+                <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="https://useDApp.readthedocs.io/en/latest/"
+            target="_blank"
+            class="button"
+            title="useDapp documentation"
+            >DOCUMENTATION</a
+          >
+          <a
+            href="https://ethworks.io/"
+            target="_blank"
+            class="animate__animated author author--mobile-menu"
+            title="Ethworks website homepage"
+            data-animations="animate__slideInUp"
+            style="animation-delay: 0.45s"
+          >
+            Created by
+            <svg class="author__image" x="0px" y="0px" viewBox="0 0 340 40" preserveAspectRatio="xMidYMid meet">
+              <path
+                class="ethword"
+                d="M320.2,37c-2.5,0-5-0.3-7.5-1c-2.3-0.6-4.1-1.4-5.6-2.4l2.4-5.5c1.6,0.9,3.2,1.7,4.9,2.2
                   c1.9,0.6,3.9,0.9,5.8,0.9c2,0,3.5-0.3,4.7-0.8c1.2-0.6,1.8-1.5,1.8-2.7c0-1-0.5-1.9-1.6-2.6c-1-0.6-2.7-1.2-5.4-1.7
                   c-3.2-0.6-5.7-1.4-7.4-2.3c-1.7-0.9-2.9-1.9-3.6-3.1s-1-2.7-1-4.4c0-2,0.6-3.8,1.7-5.3c1.1-1.6,2.7-2.9,4.8-3.8
                   c2.1-0.9,4.5-1.4,7.2-1.4c2.4,0,4.8,0.3,7,1c2.1,0.6,3.8,1.4,5,2.4L331,12c-1.4-0.9-2.9-1.6-4.4-2.1c-1.7-0.6-3.4-0.9-5.2-0.9
@@ -58,201 +73,255 @@
                   s1.3,1.5,1.7,2.6l3.8,9.5L247.3,36.6L247.3,36.6z M235,17.6h6.2c2,0,3.5-0.3,4.5-1c1-0.7,1.5-1.8,1.5-3.2c0-1.5-0.5-2.6-1.5-3.2
                   c-0.9-0.6-2.4-0.9-4.5-0.9H235L235,17.6L235,17.6z M153.5,36.6L146,15.3l-7.7,21.3h-6.5L120,3.4h8.1l7.4,22.6l8-22.6h5.4l7.7,23
                   l7.7-23h7.5L160,36.6H153.5L153.5,36.6z M100.9,36.6V22.8H86.1v13.8h-7.8V3.4h7.8v13.3h14.8V3.4h7.8v33.1L100.9,36.6L100.9,36.6z
-                  M48.9,36.6V9.7H38.7V3.4h28.5v6.3H57v26.8L48.9,36.6L48.9,36.6z"></path>
-            <path class="eth-e" d="M5,3.4h23.7v6H5V3.4z"></path>
-            <path class="eth-e" d="M5,16.8h23.7v6H5V16.8z"></path>
-            <path class="eth-e" d="M5,31h23.7v6H5V31z"></path>
-          </svg>
-        </a>
+                  M48.9,36.6V9.7H38.7V3.4h28.5v6.3H57v26.8L48.9,36.6L48.9,36.6z"
+              ></path>
+              <path class="eth-e" d="M5,3.4h23.7v6H5V3.4z"></path>
+              <path class="eth-e" d="M5,16.8h23.7v6H5V16.8z"></path>
+              <path class="eth-e" d="M5,31h23.7v6H5V31z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="burger burger--arrowalt js-burger">
+      <div class="burger-box">
+        <div class="burger-inner"></div>
       </div>
     </div>
-  </header>
-  <div class="burger burger--arrowalt js-burger">
-    <div class="burger-box">
-      <div class="burger-inner"></div>
-    </div>
-  </div>
-  <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" class="button button--mobile-fixed"
-    title="useDapp documentation">DOCUMENTATION</a>
-  <main id="fullpage" class="main" data-anchor="about">
-    <section data-sectioncolor="#FFF4D4" class="section section--main">
-      <div class="container container--left">
-        <div class="smaller-wrapper">
-          <h1 class="main-title text--left"><span class="main-title__large">useDApp</span> <br> Ethereum <span
-              data-animations="animate__shakeY" class="inline-block animate__animated">🤝</span> React</h1>
-          <h2 class="title text--left">Framework for rapid DApp development.</h2>
-        </div>
-        <div class="hero-image">
-          <div class="hero-image__wrapper" data-tilt data-tilt-full-page-listening data-tilt data-tilt-max="10"
-            data-tilt-reverse="true">
-            <div class="hero-image__bottom-cloud__wrapper">
-              <img src="./img/bottom-cloud.png" alt="" data-animations="animate__fadeInBottomLeft"
-                class="hero-image__bottom-cloud animate__animated">
-            </div>
-            <div class="hero-image__top-cloud__wrapper">
-              <img src="./img/top-cloud.png" alt="" data-animations="animate__fadeInTopRight"
-                class="hero-image__top-cloud animate__animated">
-            </div>
-            <div class="hero-image__rocket-woman__wrapper">
-              <img src="./img/rocket-woman.png" alt="" data-animations="animate__fadeInBottomRight"
-                class="hero-image__rocket-woman animate__animated">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section data-sectioncolor="#DCDBFF" data-anchor="whyus" class="section">
-      <div class="container">
-        <p class="small-title">Why useDApp?</p>
-        <h2 class="title">
-          <span data-animations="animate__fadeInLeft" class="inline-block animate__animated">
-            Simple.
-          </span>
-          <span data-animations="animate__fadeInRight" style="animation-delay: 0.15s;"
-            class="inline-block animate__animated animate__fast">
-            Robust.
-          </span>
-          <br>
-          <span data-animations="animate__fadeInUp" style="animation-delay: 0.3s;"
-            class="inline-block animate__animated animate__fast">
-            Extendable.
-          </span>
-          <span data-animations="animate__fadeInRight" style="animation-delay: 0.45s;"
-            class="inline-block animate__animated animate__fast">
-            Testable.
-          </span>
-        </h2>
-      </div>
-    </section>
-    <section data-sectioncolor="#D4EDFF" data-anchor="problem_solution" class="section">
-      <div class="container">
-        <div class="two-columns">
-          <div data-animations="animate__fadeInLeft" class="box animate__animated">
-            <h2 class="box__title">Problem</h2>
-            <p class="box__subtitle">A well-designed DApp</p>
-            <div class="problem-row">
-              <p class="box__label">UX:</p>
-              <p class="box__label">Development:</p>
-            </div>
-            <div class="box__grid problem-grid">
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">🔄 </div>
-                  <h3 class="info__title">Refresh</h3>
-                </div>
-                <p class="info__text">Refreshes after a new block arrives</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">✨</div>
-                  <h3 class="info__title">Easy to work</h3>
-                </div>
-                <p class="info__text">Works on both mainnet and testnets</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">📺</div>
-                  <h3 class="info__title">View mode</h3>
-                </div>
-                <p class="info__text">Works in view mode before connecting a wallet</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">🛡️</div>
-                  <h3 class="info__title">Easy to test</h3>
-                </div>
-                <p class="info__text">Error proof and easy to test</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">✅</div>
-                  <h3 class="info__title">Status</h3>
-                </div>
-                <p class="info__text">Shows the status of the current transactions</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">🍼</div>
-                  <h3 class="info__title">Easy to develop</h3>
-                </div>
-                <p class="info__text">Easy to develop and extend</p>
-              </div>
-            </div>
-          </div>
-          <div data-animations="animate__fadeInRight" style="animation-delay: 0.15s;" class="box animate__animated">
-            <h2 class="box__title">Solution</h2>
-            <p class="box__subtitle">Combines the best practices</p>
-            <div class="box__grid solution-grid">
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">🏗️</div>
-                  <h3 class="info__title">React hooks</h3>
-                </div>
-                <p class="info__text">Uses React hooks as your primary building ingredient</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">🔧</div>
-                  <h3 class="info__title">Modern stack</h3>
-                </div>
-                <p class="info__text">Employs
-                  <a href="https://github.com/ethers-io/" class="link" target="_blank"
-                    title="ethers.js GitHub repositories">ethers.js</a>,
-                  <a href="https://github.com/NoahZinsmeister/web3-react" class="link" target="_blank"
-                    title="web3-react GitHub repository">web3-react</a>,
-                  <a href="https://github.com/makerdao/multicall" class="link" target="_blank"
-                    title="multicall GitHub repository by MakerDAO">multicall</a> &
-                  <a href="https://getwaffle.io/" class="link" target="_blank"
-                    title="Ours waffle GitHub repository">Waffle</a>
-                </p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">🚅</div>
-                  <h3 class="info__title">Auto refresh</h3>
-                </div>
-                <p class="info__text">Refreshes after blocks, wallet or network changes</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">📚</div>
-                  <h3 class="info__title">Extend</h3>
-                </div>
-                <p class="info__text">Extends easily with custom hooks</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">🛒</div>
-                  <h3 class="info__title">Multicall</h3>
-                </div>
-                <p class="info__text">Combines multiple blockchain calls into a single multicall</p>
-              </div>
-              <div class="info">
-                <div class="info__row">
-                  <div class="info__icon">💡</div>
-                  <h3 class="info__title">Tests</h3>
-                </div>
-                <p class="info__text">Simple integration tests for UI and blockchain</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section data-sectioncolor="#DAFFE9" data-anchor="example" class="section">
-      <div class="container">
-        <div class="two-columns">
+    <a
+      href="https://useDApp.readthedocs.io/en/latest/"
+      target="_blank"
+      class="button button--mobile-fixed"
+      title="useDapp documentation"
+      >DOCUMENTATION</a
+    >
+    <main id="fullpage" class="main" data-anchor="about">
+      <section data-sectioncolor="#FFF4D4" class="section section--main">
+        <div class="container container--left">
           <div class="smaller-wrapper">
-            <h2 class="title text--left">Example</h2>
-            <p class="text">
-              <a href="https://example.useDApp.io/" class="link" target="_blank"
-                title="useDApp example application">Example app</a> <br class="br-none"> is availiable
-              <span data-animations="animate__heartBeat animate__infinite"
-                class="inline-block animate__animated">❤️</span>
-            </p>
+            <h1 class="main-title text--left">
+              <span class="main-title__large">useDApp</span> <br />
+              Ethereum <span data-animations="animate__shakeY" class="inline-block animate__animated">🤝</span> React
+            </h1>
+            <h2 class="title text--left">Framework for rapid DApp development.</h2>
           </div>
-          <div data-animations="animate__slideInRight" class="window animate__animated">
-            <pre class="window-pre">
+          <div class="hero-image">
+            <div
+              class="hero-image__wrapper"
+              data-tilt
+              data-tilt-full-page-listening
+              data-tilt-max="10"
+              data-tilt-reverse="true"
+            >
+              <div class="hero-image__bottom-cloud__wrapper">
+                <img
+                  src="./img/bottom-cloud.png"
+                  alt=""
+                  data-animations="animate__fadeInBottomLeft"
+                  class="hero-image__bottom-cloud animate__animated"
+                />
+              </div>
+              <div class="hero-image__top-cloud__wrapper">
+                <img
+                  src="./img/top-cloud.png"
+                  alt=""
+                  data-animations="animate__fadeInTopRight"
+                  class="hero-image__top-cloud animate__animated"
+                />
+              </div>
+              <div class="hero-image__rocket-woman__wrapper">
+                <img
+                  src="./img/rocket-woman.png"
+                  alt=""
+                  data-animations="animate__fadeInBottomRight"
+                  class="hero-image__rocket-woman animate__animated"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-sectioncolor="#DCDBFF" data-anchor="whyus" class="section">
+        <div class="container">
+          <p class="small-title">Why useDApp?</p>
+          <h2 class="title">
+            <span data-animations="animate__fadeInLeft" class="inline-block animate__animated"> Simple. </span>
+            <span
+              data-animations="animate__fadeInRight"
+              style="animation-delay: 0.15s"
+              class="inline-block animate__animated animate__fast"
+            >
+              Robust.
+            </span>
+            <br />
+            <span
+              data-animations="animate__fadeInUp"
+              style="animation-delay: 0.3s"
+              class="inline-block animate__animated animate__fast"
+            >
+              Extendable.
+            </span>
+            <span
+              data-animations="animate__fadeInRight"
+              style="animation-delay: 0.45s"
+              class="inline-block animate__animated animate__fast"
+            >
+              Testable.
+            </span>
+          </h2>
+        </div>
+      </section>
+      <section data-sectioncolor="#D4EDFF" data-anchor="problem_solution" class="section">
+        <div class="container">
+          <div class="two-columns">
+            <div data-animations="animate__fadeInLeft" class="box animate__animated">
+              <h2 class="box__title">Problem</h2>
+              <p class="box__subtitle">A well-designed DApp</p>
+              <div class="problem-row">
+                <p class="box__label">UX:</p>
+                <p class="box__label">Development:</p>
+              </div>
+              <div class="box__grid problem-grid">
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">🔄</div>
+                    <h3 class="info__title">Refresh</h3>
+                  </div>
+                  <p class="info__text">Refreshes after a new block arrives</p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">✨</div>
+                    <h3 class="info__title">Easy to work</h3>
+                  </div>
+                  <p class="info__text">Works on both mainnet and testnets</p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">📺</div>
+                    <h3 class="info__title">View mode</h3>
+                  </div>
+                  <p class="info__text">Works in view mode before connecting a wallet</p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">🛡️</div>
+                    <h3 class="info__title">Easy to test</h3>
+                  </div>
+                  <p class="info__text">Error proof and easy to test</p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">✅</div>
+                    <h3 class="info__title">Status</h3>
+                  </div>
+                  <p class="info__text">Shows the status of the current transactions</p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">🍼</div>
+                    <h3 class="info__title">Easy to develop</h3>
+                  </div>
+                  <p class="info__text">Easy to develop and extend</p>
+                </div>
+              </div>
+            </div>
+            <div data-animations="animate__fadeInRight" style="animation-delay: 0.15s" class="box animate__animated">
+              <h2 class="box__title">Solution</h2>
+              <p class="box__subtitle">Combines the best practices</p>
+              <div class="box__grid solution-grid">
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">🏗️</div>
+                    <h3 class="info__title">React hooks</h3>
+                  </div>
+                  <p class="info__text">Uses React hooks as your primary building ingredient</p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">🔧</div>
+                    <h3 class="info__title">Modern stack</h3>
+                  </div>
+                  <p class="info__text">
+                    Employs
+                    <a
+                      href="https://github.com/ethers-io/"
+                      class="link"
+                      target="_blank"
+                      title="ethers.js GitHub repositories"
+                      >ethers.js</a
+                    >,
+                    <a
+                      href="https://github.com/NoahZinsmeister/web3-react"
+                      class="link"
+                      target="_blank"
+                      title="web3-react GitHub repository"
+                      >web3-react</a
+                    >,
+                    <a
+                      href="https://github.com/makerdao/multicall"
+                      class="link"
+                      target="_blank"
+                      title="multicall GitHub repository by MakerDAO"
+                      >multicall</a
+                    >
+                    &
+                    <a href="https://getwaffle.io/" class="link" target="_blank" title="Ours waffle GitHub repository"
+                      >Waffle</a
+                    >
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">🚅</div>
+                    <h3 class="info__title">Auto refresh</h3>
+                  </div>
+                  <p class="info__text">Refreshes after blocks, wallet or network changes</p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">📚</div>
+                    <h3 class="info__title">Extend</h3>
+                  </div>
+                  <p class="info__text">Extends easily with custom hooks</p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">🛒</div>
+                    <h3 class="info__title">Multicall</h3>
+                  </div>
+                  <p class="info__text">Combines multiple blockchain calls into a single multicall</p>
+                </div>
+                <div class="info">
+                  <div class="info__row">
+                    <div class="info__icon">💡</div>
+                    <h3 class="info__title">Tests</h3>
+                  </div>
+                  <p class="info__text">Simple integration tests for UI and blockchain</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-sectioncolor="#DAFFE9" data-anchor="example" class="section">
+        <div class="container">
+          <div class="two-columns">
+            <div class="smaller-wrapper">
+              <h2 class="title text--left">Example</h2>
+              <p class="text">
+                <a href="https://example.useDApp.io/" class="link" target="_blank" title="useDApp example application"
+                  >Example app</a
+                >
+                <br class="br-none" />
+                is availiable
+                <span data-animations="animate__heartBeat animate__infinite" class="inline-block animate__animated"
+                  >❤️</span
+                >
+              </p>
+            </div>
+            <div data-animations="animate__slideInRight" class="window animate__animated">
+              <pre class="window-pre">
 <code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
   readOnlyChain: ChainId.Mainnet,
   readOnlyUrls: {
@@ -279,95 +348,115 @@ export function App() {
   )
 }
 </code></pre>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section data-sectioncolor="#FFE9DA" data-anchor="contribution" class="section section--with-footer">
-      <div class="container container--near-footer">
-        <h3 class="subtitle">Contributions are always welcome,<br>no matter how large or small.</h3>
-        <div class="two-columns">
-          <div data-animations="animate__slideInLeft" style="animation-delay: 0.15s;"
-            class="box box--more-space animate__animated">
-            <h3 class="box__subtitle">Before you issue pull request</h3>
-            <div class="box__rows">
-              <div class="info">
-                <div class="info__row info__row--small">
-                  <div class="info__icon">🧪</div>
-                  <h3 class="info__title">Make sure all tests pass</h3>
+      </section>
+      <section data-sectioncolor="#FFE9DA" data-anchor="contribution" class="section section--with-footer">
+        <div class="container container--near-footer">
+          <h3 class="subtitle">Contributions are always welcome,<br />no matter how large or small.</h3>
+          <div class="two-columns">
+            <div
+              data-animations="animate__slideInLeft"
+              style="animation-delay: 0.15s"
+              class="box box--more-space animate__animated"
+            >
+              <h3 class="box__subtitle">Before you issue pull request</h3>
+              <div class="box__rows">
+                <div class="info">
+                  <div class="info__row info__row--small">
+                    <div class="info__icon">🧪</div>
+                    <h3 class="info__title">Make sure all tests pass</h3>
+                  </div>
+                  <p class="info__text">To run tests type: <code class="code--inline">yarn test</code></p>
                 </div>
-                <p class="info__text">To run tests type: <code class="code--inline">yarn test</code></p>
-              </div>
-              <div class="info">
-                <div class="info__row info__row--small">
-                  <div class="info__icon">🧪</div>
-                  <h3 class="info__title">Make sure linter passes</h3>
+                <div class="info">
+                  <div class="info__row info__row--small">
+                    <div class="info__icon">🧪</div>
+                    <h3 class="info__title">Make sure linter passes</h3>
+                  </div>
+                  <p class="info__text">To run linter type: <code class="code--inline">yarn lint</code></p>
                 </div>
-                <p class="info__text">To run linter type: <code class="code--inline">yarn lint</code></p>
-              </div>
-              <div class="info">
-                <div class="info__row info__row--small">
-                  <div class="info__icon">📔</div>
-                  <h3 class="info__title">Make sure you have test coverage for any new features</h3>
+                <div class="info">
+                  <div class="info__row info__row--small">
+                    <div class="info__icon">📔</div>
+                    <h3 class="info__title">Make sure you have test coverage for any new features</h3>
+                  </div>
                 </div>
-              </div>
-              <div class="info">
-                <div class="info__row info__row--small">
-                  <div class="info__icon">📖</div>
-                  <h3 class="info__title">Before contributing, please read the code of conduct and
-                    contribution policy.</h3>
+                <div class="info">
+                  <div class="info__row info__row--small">
+                    <div class="info__icon">📖</div>
+                    <h3 class="info__title">
+                      Before contributing, please read the code of conduct and contribution policy.
+                    </h3>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div data-animations="animate__slideInRight" class="box box--more-space animate__animated">
-            <h3 class="box__subtitle">Building documentation</h3>
-            <div class="box__rows">
-              <div class="info">
-                <div class="info__row info__row--small">
-                  <div class="info__icon">⚙️</div>
-                  <h3 class="info__title">
-                    <a href="https://www.sphinx-doc.org/en/master/usage/installation.html" class="link" target="_blank"
-                      title="Sphinx installation guide">
-                      Install Sphinx
-                    </a> to build documentation
-                  </h3>
-                </div>
-                <p class="info__text"><code class="code--inline">cd docs</code>, <code
-                    class="code--inline">make html</code></p>
-              </div>
-              <div class="info">
-                <div class="info__row info__row--small">
-                  <div class="info__icon ">🐍</div>
-                  <h3 class="info__title">
-                    Before building documentation for the first time you may have to install required python packages
-                  </h3>
-                </div>
-                <p class="info__text"><code class="code--inline">pip3 install -r docs/requirements.txt</code></p>
               </div>
             </div>
-          </div>
-          <div data-animations="animate__slideInUp" style="animation-delay: 0.3s;"
-            class="box--inline animate__animated">
-            <div class="box__rows">
-              <div class="info">
-                <div class="info__row info__row--small">
-                  <div class="info__icon">📑</div>
-                  <h3 class="info__title">
-                    License:
-                  </h3>
-                  <p class="info__text"> useDapp is released under the <a href="https://opensource.org/licenses/MIT"
-                      class="link" target="_blank">MIT License</a>.
+            <div data-animations="animate__slideInRight" class="box box--more-space animate__animated">
+              <h3 class="box__subtitle">Building documentation</h3>
+              <div class="box__rows">
+                <div class="info">
+                  <div class="info__row info__row--small">
+                    <div class="info__icon">⚙️</div>
+                    <h3 class="info__title">
+                      <a
+                        href="https://www.sphinx-doc.org/en/master/usage/installation.html"
+                        class="link"
+                        target="_blank"
+                        title="Sphinx installation guide"
+                      >
+                        Install Sphinx
+                      </a>
+                      to build documentation
+                    </h3>
+                  </div>
+                  <p class="info__text">
+                    <code class="code--inline">cd docs</code>, <code class="code--inline">make html</code>
                   </p>
                 </div>
+                <div class="info">
+                  <div class="info__row info__row--small">
+                    <div class="info__icon">🐍</div>
+                    <h3 class="info__title">
+                      Before building documentation for the first time you may have to install required python packages
+                    </h3>
+                  </div>
+                  <p class="info__text"><code class="code--inline">pip3 install -r docs/requirements.txt</code></p>
+                </div>
               </div>
             </div>
-          </div>
-          <a href="https://ethworks.io/" target="_blank" class="animate__animated author author--mobile"
-            title="Ethworks website homepage" data-animations="animate__slideInUp" style="animation-delay: 0.45s;">
-            Created by
-            <svg class="author__image" x="0px" y="0px" viewBox="0 0 340 40" preserveAspectRatio="xMidYMid meet">
-              <path class="ethword" d="M320.2,37c-2.5,0-5-0.3-7.5-1c-2.3-0.6-4.1-1.4-5.6-2.4l2.4-5.5c1.6,0.9,3.2,1.7,4.9,2.2
+            <div
+              data-animations="animate__slideInUp"
+              style="animation-delay: 0.3s"
+              class="box--inline animate__animated"
+            >
+              <div class="box__rows">
+                <div class="info">
+                  <div class="info__row info__row--small">
+                    <div class="info__icon">📑</div>
+                    <h3 class="info__title">License:</h3>
+                    <p class="info__text">
+                      useDapp is released under the
+                      <a href="https://opensource.org/licenses/MIT" class="link" target="_blank">MIT License</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://ethworks.io/"
+              target="_blank"
+              class="animate__animated author author--mobile"
+              title="Ethworks website homepage"
+              data-animations="animate__slideInUp"
+              style="animation-delay: 0.45s"
+            >
+              Created by
+              <svg class="author__image" x="0px" y="0px" viewBox="0 0 340 40" preserveAspectRatio="xMidYMid meet">
+                <path
+                  class="ethword"
+                  d="M320.2,37c-2.5,0-5-0.3-7.5-1c-2.3-0.6-4.1-1.4-5.6-2.4l2.4-5.5c1.6,0.9,3.2,1.7,4.9,2.2
                   c1.9,0.6,3.9,0.9,5.8,0.9c2,0,3.5-0.3,4.7-0.8c1.2-0.6,1.8-1.5,1.8-2.7c0-1-0.5-1.9-1.6-2.6c-1-0.6-2.7-1.2-5.4-1.7
                   c-3.2-0.6-5.7-1.4-7.4-2.3c-1.7-0.9-2.9-1.9-3.6-3.1s-1-2.7-1-4.4c0-2,0.6-3.8,1.7-5.3c1.1-1.6,2.7-2.9,4.8-3.8
                   c2.1-0.9,4.5-1.4,7.2-1.4c2.4,0,4.8,0.3,7,1c2.1,0.6,3.8,1.4,5,2.4L331,12c-1.4-0.9-2.9-1.6-4.4-2.1c-1.7-0.6-3.4-0.9-5.2-0.9
@@ -382,20 +471,23 @@ export function App() {
                   s1.3,1.5,1.7,2.6l3.8,9.5L247.3,36.6L247.3,36.6z M235,17.6h6.2c2,0,3.5-0.3,4.5-1c1-0.7,1.5-1.8,1.5-3.2c0-1.5-0.5-2.6-1.5-3.2
                   c-0.9-0.6-2.4-0.9-4.5-0.9H235L235,17.6L235,17.6z M153.5,36.6L146,15.3l-7.7,21.3h-6.5L120,3.4h8.1l7.4,22.6l8-22.6h5.4l7.7,23
                   l7.7-23h7.5L160,36.6H153.5L153.5,36.6z M100.9,36.6V22.8H86.1v13.8h-7.8V3.4h7.8v13.3h14.8V3.4h7.8v33.1L100.9,36.6L100.9,36.6z
-                  M48.9,36.6V9.7H38.7V3.4h28.5v6.3H57v26.8L48.9,36.6L48.9,36.6z"></path>
-              <path class="eth-e" d="M5,3.4h23.7v6H5V3.4z"></path>
-              <path class="eth-e" d="M5,16.8h23.7v6H5V16.8z"></path>
-              <path class="eth-e" d="M5,31h23.7v6H5V31z"></path>
-            </svg>
-          </a>
-        </div>
-        <div class="footer">
-          <div class="container">
-            <nav class="footer__nav">
-              <a href="https://ethworks.io/" target="_blank" class="author" title="Ethworks website homepage">
-                Created by
-                <svg class="author__image" x="0px" y="0px" viewBox="0 0 340 40" preserveAspectRatio="xMidYMid meet">
-                  <path class="ethword" d="M320.2,37c-2.5,0-5-0.3-7.5-1c-2.3-0.6-4.1-1.4-5.6-2.4l2.4-5.5c1.6,0.9,3.2,1.7,4.9,2.2
+                  M48.9,36.6V9.7H38.7V3.4h28.5v6.3H57v26.8L48.9,36.6L48.9,36.6z"
+                ></path>
+                <path class="eth-e" d="M5,3.4h23.7v6H5V3.4z"></path>
+                <path class="eth-e" d="M5,16.8h23.7v6H5V16.8z"></path>
+                <path class="eth-e" d="M5,31h23.7v6H5V31z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="footer">
+            <div class="container">
+              <nav class="footer__nav">
+                <a href="https://ethworks.io/" target="_blank" class="author" title="Ethworks website homepage">
+                  Created by
+                  <svg class="author__image" x="0px" y="0px" viewBox="0 0 340 40" preserveAspectRatio="xMidYMid meet">
+                    <path
+                      class="ethword"
+                      d="M320.2,37c-2.5,0-5-0.3-7.5-1c-2.3-0.6-4.1-1.4-5.6-2.4l2.4-5.5c1.6,0.9,3.2,1.7,4.9,2.2
                       c1.9,0.6,3.9,0.9,5.8,0.9c2,0,3.5-0.3,4.7-0.8c1.2-0.6,1.8-1.5,1.8-2.7c0-1-0.5-1.9-1.6-2.6c-1-0.6-2.7-1.2-5.4-1.7
                       c-3.2-0.6-5.7-1.4-7.4-2.3c-1.7-0.9-2.9-1.9-3.6-3.1s-1-2.7-1-4.4c0-2,0.6-3.8,1.7-5.3c1.1-1.6,2.7-2.9,4.8-3.8
                       c2.1-0.9,4.5-1.4,7.2-1.4c2.4,0,4.8,0.3,7,1c2.1,0.6,3.8,1.4,5,2.4L331,12c-1.4-0.9-2.9-1.6-4.4-2.1c-1.7-0.6-3.4-0.9-5.2-0.9
@@ -410,47 +502,53 @@ export function App() {
                       s1.3,1.5,1.7,2.6l3.8,9.5L247.3,36.6L247.3,36.6z M235,17.6h6.2c2,0,3.5-0.3,4.5-1c1-0.7,1.5-1.8,1.5-3.2c0-1.5-0.5-2.6-1.5-3.2
                       c-0.9-0.6-2.4-0.9-4.5-0.9H235L235,17.6L235,17.6z M153.5,36.6L146,15.3l-7.7,21.3h-6.5L120,3.4h8.1l7.4,22.6l8-22.6h5.4l7.7,23
                       l7.7-23h7.5L160,36.6H153.5L153.5,36.6z M100.9,36.6V22.8H86.1v13.8h-7.8V3.4h7.8v13.3h14.8V3.4h7.8v33.1L100.9,36.6L100.9,36.6z
-                      M48.9,36.6V9.7H38.7V3.4h28.5v6.3H57v26.8L48.9,36.6L48.9,36.6z"></path>
-                  <path class="eth-e" d="M5,3.4h23.7v6H5V3.4z"></path>
-                  <path class="eth-e" d="M5,16.8h23.7v6H5V16.8z"></path>
-                  <path class="eth-e" d="M5,31h23.7v6H5V31z"></path>
-                </svg>
-              </a>
-              <div class="footer__menu">
-                <ul class="nav__list">
-                  <li class="nav__item">
-                    <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor">PROBLEM &
-                      SOLUTION</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="https://useDApp.readthedocs.io/en/latest/" target="_blank" title="useDapp documentation"
-                      class="nav__link">DOCUMENTATION</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+                      M48.9,36.6V9.7H38.7V3.4h28.5v6.3H57v26.8L48.9,36.6L48.9,36.6z"
+                    ></path>
+                    <path class="eth-e" d="M5,3.4h23.7v6H5V3.4z"></path>
+                    <path class="eth-e" d="M5,16.8h23.7v6H5V16.8z"></path>
+                    <path class="eth-e" d="M5,31h23.7v6H5V31z"></path>
+                  </svg>
+                </a>
+                <div class="footer__menu">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a href="#whyus" data-destination="whyus" class="nav__link anchor">WHY US</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#problem_solution" data-destination="problem_solution" class="nav__link anchor"
+                        >PROBLEM & SOLUTION</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#contribution" data-destination="contribution" class="nav__link anchor">CONTRIBUTION</a>
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="https://useDApp.readthedocs.io/en/latest/"
+                        target="_blank"
+                        title="useDapp documentation"
+                        class="nav__link"
+                        >DOCUMENTATION</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <div class="sections-backgrounds"></div>
+      </section>
+    </main>
+    <div class="sections-backgrounds"></div>
 
-  <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-  <script type="text/javascript" src="js/fullpage.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/code-lines.js"></script>
-  <script type="text/javascript" src="js/animations-on-scroll.js"></script>
-  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-</body>
-
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/code-lines.js"></script>
+    <script src="js/animations-on-scroll.js"></script>
+    <script src="js/vanilla-tilt.js"></script>
+  </body>
 </html>
