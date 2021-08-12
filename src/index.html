@@ -23,16 +23,16 @@
         <div class="header__row">
           <nav class="nav">
             <ul id="header-menu" class="nav__list">
-              <li class="nav__item">
+              <li data-menuanchor="features" class="nav__item">
                 <a href="#features" data-destination="features" class="nav__link anchor"> FEATURES </a>
               </li>
-              <li class="nav__item">
+              <li data-menuanchor="build" class="nav__item">
                 <a href="#build" data-destination="build" class="nav__link anchor">BUILD</a>
               </li>
-              <li class="nav__item">
+              <li data-menuanchor="example" class="nav__item">
                 <a href="#example" data-destination="example" class="nav__link anchor">EXAMPLE</a>
               </li>
-              <li class="nav__item">
+              <li data-menuanchor="resources" class="nav__item">
                 <a href="#resources" data-destination="resources" class="nav__link anchor">RESOURCES</a>
               </li>
             </ul>
@@ -101,7 +101,7 @@
               <span class="main-title__large">useDApp</span> <br />
               Ethereum <span data-animations="animate__shakeY" class="inline-block animate__animated">🤝</span> React
             </h1>
-            <h2 class="title-fullpage text--left">Framework for rapid DApp development.</h2>
+            <h2 class="title-page text--left">Framework for rapid DApp development.</h2>
           </div>
           <div class="hero-image">
             <div
@@ -142,34 +142,55 @@
           </a>
         </div>
       </section>
-      <section data-sectioncolor="#DCDBFF" data-anchor="whyus" class="section">
-        <div class="container">
-          <p class="small-title">Why useDApp?</p>
-          <h2 class="title">
-            <span data-animations="animate__fadeInLeft" class="inline-block animate__animated"> Simple. </span>
-            <span
+      <section data-sectioncolor="#DCDBFF" data-anchor="features" class="section">
+        <div class="container container--left">
+          <h2 class="title">Features</h2>
+          <div class="features">
+            <div data-animations="animate__fadeInLeft" class="features__box animate__animated">
+              <h2 class="title-page text--left">🔌 Connection management</h2>
+              <ul class="features__list">
+                <li class="features__item">Read-only mode out-of the box</li>
+                <li class="features__item">Network switching</li>
+                <li class="features__item">Handling multiple networks</li>
+              </ul>
+            </div>
+            <div
               data-animations="animate__fadeInRight"
               style="animation-delay: 0.15s"
-              class="inline-block animate__animated animate__fast"
+              class="features__box animate__animated animate__fast"
             >
-              Robust.
-            </span>
-            <br />
-            <span
+              <h2 class="title-page text--left">🔄 Reading blockchain state</h2>
+              <ul class="features__list">
+                <li class="features__item">Auto refresh on new block</li>
+                <li class="features__item">Auto refresh on wallet change</li>
+                <li class="features__item">Combine multiple calls into a single multicall</li>
+              </ul>
+            </div>
+            <div
               data-animations="animate__fadeInUp"
               style="animation-delay: 0.3s"
-              class="inline-block animate__animated animate__fast"
+              class="features__box animate__animated animate__fast"
             >
-              Extendable.
-            </span>
-            <span
+              <h2 class="title-page text--left">✅ Transactions</h2>
+              <ul class="features__list">
+                <li class="features__item">Track transaction state</li>
+                <li class="features__item">History</li>
+                <li class="features__item">Notifications</li>
+              </ul>
+            </div>
+            <div
               data-animations="animate__fadeInRight"
               style="animation-delay: 0.45s"
-              class="inline-block animate__animated animate__fast"
+              class="features__box animate__animated animate__fast"
             >
-              Testable.
-            </span>
-          </h2>
+              <h2 class="title-page text--left">⚙️ Browser plugin</h2>
+              <ul class="features__list">
+                <li class="features__item">Available in Beta for Firefox and Chrome</li>
+                <li class="features__item">Track under-the-hood events</li>
+                <li class="features__item">Manage ABIs and tags</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section data-sectioncolor="#D4EDFF" data-anchor="problem_solution" class="section">

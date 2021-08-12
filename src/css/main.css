@@ -221,7 +221,7 @@ button, a {
       font-size: 32px;
       margin-bottom: 8px; } }
 
-.title-fullpage {
+.title-page {
   font-family: 'HelveticaNeue-Bold', sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -790,6 +790,32 @@ body .fp-scroller {
   -o-transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
   transition: bottom 0.1s ease, transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22), -webkit-transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22); }
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-column-gap: 146px;
+  grid-row-gap: 96px;
+  margin-top: 48px; }
+
+.features__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.features__list {
+  margin-top: 22px;
+  margin-left: 77px;
+  list-style-type: circle; }
+
+.features__item {
+  font-size: 20px;
+  line-height: 32px; }
 
 .row {
   display: -webkit-box;
