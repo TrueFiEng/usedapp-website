@@ -508,7 +508,7 @@ body .fp-scroller {
     width: 100%; } }
 
 .nav__item + .nav__item {
-  margin-left: 32px; }
+  margin-left: 40px; }
 
 .nav__list {
   display: -webkit-box;
