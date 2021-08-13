@@ -234,45 +234,36 @@
           <div class="two-columns">
             <div class="smaller-wrapper">
               <h2 class="title text--left">Example</h2>
-              <p class="text">
-                <a href="https://example.useDApp.io/" class="link" target="_blank" title="useDApp example application"
-                  >Example app</a
-                >
+              <p class="title-page text--left">
+                Example app
                 <br class="br-none" />
                 is availiable
+                <a href="https://example.useDApp.io/" class="link" target="_blank" title="useDApp example application">
+                  here</a
+                >
                 <span data-animations="animate__heartBeat animate__infinite" class="inline-block animate__animated"
                   >❤️</span
                 >
               </p>
             </div>
+
             <div data-animations="animate__slideInRight" class="window animate__animated">
               <pre class="window-pre">
-<code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
-  readOnlyChain: ChainId.Mainnet,
-  readOnlyUrls: {
-    [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
+                <code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
+ readOnlyChain: ChainId.Mainnet,
+ readOnlyUrls: {
+  [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
   },
 }
-  
+                  
 ReactDOM.<span class="code--red">render</span>(
   &lt;React.StrictMode&gt;
-    &lt;DAppProvider config={config}&gt;
-      &lt;App /&gt;
-    &lt;/DAppProvider&gt;
+  &lt;DAppProvider config={config}&gt;
+  &lt;App /&gt;
+  &lt;/DAppProvider&gt;
   &lt;/React.StrictMode&gt;,
-  document.<span class="code--red">getElementById</span>('root')
-)
-  
-export function App() {
-  const { activateBrowserWallet, account } = <span class="code--red">useEthers</span>()
-  return (
-    &lt;div&gt;
-      &lt;button onClick={() =&gt; <span class="code--red">activateBrowserWallet</span>()}&gt;Connect&lt;/button&gt;
-      {account && &lt;p&gt;Account: {account}&lt;/p&gt;}
-    &lt;/div&gt;
-  )
-}
-</code></pre>
+document.<span class="code--red">getElementById</span>('root')
+)</code></pre>
             </div>
           </div>
         </div>
