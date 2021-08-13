@@ -844,6 +844,44 @@ body .fp-scroller {
   -webkit-filter: grayscale(1);
           filter: grayscale(1); }
 
+.resources__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 105px; }
+
+.resource {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  padding: 16px; }
+
+.resource__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  padding: 32px 16px;
+  width: 296px; }
+
+.resource__link {
+  font-family: 'HelveticaNeue-Bold', sans-serif;
+  font-size: 36px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #23242A; }
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
