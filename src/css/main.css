@@ -1243,7 +1243,7 @@ body .fp-scroller {
           align-items: center;
   width: 100%;
   background-color: #151619;
-  padding: 8px 0; }
+  padding: 34px 0; }
   @media (max-width: 900px) {
     .footer {
       display: none; } }
@@ -1285,8 +1285,8 @@ body .fp-scroller {
 .footer__nav .nav__link {
   color: #ffffff; }
 
-.footer__nav .nav__link:hover {
-  color: #D75A55; }
+.footer__nav .button:hover {
+  color: #ffffff; }
 
 .nav__item > .button {
   position: static;
@@ -1339,6 +1339,8 @@ body .fp-scroller {
       height: 100%;
       padding: 8px 0 4px;
       line-height: 12px; } }
+  .author span {
+    margin-bottom: 16px; }
 
 .author--mobile {
   display: none;
