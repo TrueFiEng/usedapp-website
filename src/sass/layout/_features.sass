@@ -6,15 +6,51 @@
   grid-row-gap: 96px
   margin-top: 48px
 
+  +media(m)
+  grid-column-gap: 0
+
+  +media(s)
+   grid-template-columns: 1fr
+   grid-template-rows: 1fr 1fr
+   grid-row-gap: 32px
+   margin-top: 24px
+
+
 .features__box
   display: flex
-  flex-direction: column  
+  flex-direction: column
+
+// .features__box--desktop
+//   +media(s)
+//    display: none 
 
 .features__list
   margin-top: 22px
   margin-left: 77px
   list-style-type: circle
 
+  +media(s)
+    margin-top: 16px
+    margin-left: 22px
+
 .features__item  
   font-size: 20px
-  line-height: 32px  
+  line-height: 32px
+
+  +media(s)  
+   font-size: 14px
+   line-height: 16px
+   margin-bottom: 12px
+
+.features__title
+  font-family: 'HelveticaNeue-Medium', sans-serif
+  font-size: 32px
+  font-weight: 500
+  line-height: 150%
+  text-align: center
+  letter-spacing: -0.03em
+  color: #23242A
+
+  +media(s)
+   font-size: 16px
+   text-align: left  
