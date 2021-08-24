@@ -248,8 +248,12 @@
               </p>
             </div>
 
-            <div data-animations="animate__slideInRight" class="window animate__animated">
-              <pre class="window-pre">
+            <div class="slider-wrapper">
+              <div data-animations="animate__slideInRight" class="slider animate__animated">
+                <div class="slider__body">
+                  <div class="windows">
+                    <div class="window">
+                      <pre class="window-pre">
                 <code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
  readOnlyChain: ChainId.Mainnet,
  readOnlyUrls: {
@@ -257,7 +261,7 @@
   },
 }
                   
-ReactDOM.<span class="code--red">render</span>(
+ReactDOM.<span class="code--red">render</span> (
   &lt;React.StrictMode&gt;
   &lt;DAppProvider config={config}&gt;
   &lt;App /&gt;
@@ -265,6 +269,52 @@ ReactDOM.<span class="code--red">render</span>(
   &lt;/React.StrictMode&gt;,
 document.<span class="code--red">getElementById</span>('root')
 )</code></pre>
+                    </div>
+
+                    <div class="window">
+                      <pre class="window-pre">
+                <code class="code" data-lines="1"><span class="code--red">const config: Config = {
+ readOnlyChain: ChainId.Mainnet,
+ readOnlyUrls: {
+  [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
+  },
+}
+                  
+ReactDOM.<span class="code--red">render</span> (
+  &lt;React.StrictMode&gt;
+  &lt;DAppProvider config={config}&gt;
+  &lt;App /&gt;
+  &lt;/DAppProvider&gt;
+  &lt;/React.StrictMode&gt;,
+document.<span class="code--red">getElementById</span>('root')
+)</span></code></pre>
+                    </div>
+
+                    <div class="window">
+                      <pre class="window-pre">
+                <code class="code" data-lines="1"><span class="code--blue">const config: Config = {
+ readOnlyChain: ChainId.Mainnet,
+ readOnlyUrls: {
+  [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
+  },
+}
+                  
+ReactDOM.<span class="code--red">render</span> (
+  &lt;React.StrictMode&gt;
+  &lt;DAppProvider config={config}&gt;
+  &lt;App /&gt;
+  &lt;/DAppProvider&gt;
+  &lt;/React.StrictMode&gt;,
+document.<span class="code--red">getElementById</span>('root')
+)</span></code></pre>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__btns">
+                  <button class="slider__btn slider__btn--left"></button>
+                  <button class="slider__btn slider__btn--right slider__btn--active"></button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -393,5 +443,6 @@ document.<span class="code--red">getElementById</span>('root')
     <script src="js/code-lines.js"></script>
     <script src="js/animations-on-scroll.js"></script>
     <script src="js/vanilla-tilt.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

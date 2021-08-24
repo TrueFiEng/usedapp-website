@@ -32,20 +32,6 @@ let firstActiveBackground = body.querySelector(
 let backgrounds = sectionsBackgrounds.querySelectorAll('.section-background');
 firstActiveBackground.classList.add('section-background--active');
 
-const features = document.querySelector('.section-mobile');
-
-// window.addEventListener('resize', function () {
-//   if (window.innerWidth < 600) {
-//     features.classList.add('section');
-//   } else {
-//     features.classList.remove('section');
-//   }
-// });
-
-// if (window.innerWidth < 600) {
-//   features.classList.remove('section');
-// }
-
 body.addEventListener('click', event => {
   if (event.target.classList.contains('anchor')) {
     event.preventDefault();
