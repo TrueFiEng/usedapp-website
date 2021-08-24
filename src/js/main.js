@@ -2,7 +2,7 @@ var myFullpage = new fullpage('#fullpage', {
   navigation: true,
   navigationPosition: 'left',
   scrollOverflow: true,
-  normalScrollElements: '.window',
+  normalScrollElements: '.window, .window__pre, .code, .section--with-footer, .section--features',
   keyboardScrolling: false,
 });
 
