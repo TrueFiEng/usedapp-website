@@ -233,6 +233,11 @@ button, a {
   letter-spacing: -0.03em;
   color: #23242A; }
 
+@media (max-width: 600px) {
+  .title-page--small {
+    font-size: 16px;
+    margin-bottom: 24px; } }
+
 .subtitle {
   margin-bottom: 24px;
   font-family: 'HelveticaNeue-Bold', sans-serif;
@@ -1231,7 +1236,6 @@ body .fp-scroller {
       padding: 12px 16px; } }
   @media (max-width: 600px) {
     .window {
-      max-height: 65%;
       padding: 8px 12px;
       overflow: hidden; } }
 
