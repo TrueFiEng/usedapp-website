@@ -1016,7 +1016,7 @@ body .fp-scroller {
       max-width: 100%; } }
   @media (max-width: 600px) {
     .slider {
-      max-height: 65%;
+      max-height: 80%;
       overflow: hidden; } }
 
 .slider__btns {
