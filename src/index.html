@@ -247,73 +247,71 @@
                 >
               </p>
             </div>
+            <div data-animations="animate__slideInRight" class="slider animate__animated animate__slideInRight">
+              <div class="window window--active">
+                <pre
+                  class="window-pre"
+                ><code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
+    readOnlyChain: ChainId.Mainnet,
+    readOnlyUrls: {
+      [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
+    },
+  }
+    
+  ReactDOM.<span class="code--red">render</span>(
+    &lt;React.StrictMode&gt;
+      &lt;DAppProvider config={config}&gt;
+        &lt;App /&gt;
+      &lt;/DAppProvider&gt;
+    &lt;/React.StrictMode&gt;,
+    document.<span class="code--red">getElementById</span>('root')
+  )
+  <span class="code__lines">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</span></code></pre>
+              </div>
+              <div class="window">
+                <pre
+                  class="window-pre"
+                ><code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
+    readOnlyChain: ChainId.Mainnet,
+    readOnlyUrls: {
+      [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
+    },
+  }
+    
+  <span class="code--red">ReactDOM.render(
+    &lt;React.StrictMode&gt;
+      &lt;DAppProvider config={config}&gt;
+        &lt;App /&gt;
+      &lt;/DAppProvider&gt;
+    &lt;/React.StrictMode&gt;,
+    document.getElementById</span>('root')
+  )
+  <span class="code__lines">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</span></code></pre>
+              </div>
+              <div class="window">
+                <pre
+                  class="window-pre"
+                ><code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
+    readOnlyChain: ChainId.Mainnet,
+    readOnlyUrls: {
+      [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
+    },
+  }
+    
+  <span class="code--blue">ReactDOM.render(
+    &lt;React.StrictMode&gt;
+      &lt;DAppProvider config={config}&gt;
+        &lt;App /&gt;
+      &lt;/DAppProvider&gt;
+    &lt;/React.StrictMode&gt;,
+    document.getElementById</span>('root')
+  )
+  <span class="code__lines">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</span></code></pre>
+              </div>
 
-            <div class="slider-wrapper">
-              <div data-animations="animate__slideInRight" class="slider animate__animated">
-                <div class="slider__body">
-                  <div class="windows">
-                    <div class="window">
-                      <pre class="window-pre">
-                <code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
- readOnlyChain: ChainId.Mainnet,
- readOnlyUrls: {
-  [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
-  },
-}
-                  
-ReactDOM.<span class="code--red">render</span> (
-  &lt;React.StrictMode&gt;
-  &lt;DAppProvider config={config}&gt;
-  &lt;App /&gt;
-  &lt;/DAppProvider&gt;
-  &lt;/React.StrictMode&gt;,
-document.<span class="code--red">getElementById</span>('root')
-)</code></pre>
-                    </div>
-
-                    <div class="window">
-                      <pre class="window-pre">
-                <code class="code" data-lines="1"><span class="code--red">const config: Config = {
- readOnlyChain: ChainId.Mainnet,
- readOnlyUrls: {
-  [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
-  },
-}
-                  
-ReactDOM.<span class="code--red">render</span> (
-  &lt;React.StrictMode&gt;
-  &lt;DAppProvider config={config}&gt;
-  &lt;App /&gt;
-  &lt;/DAppProvider&gt;
-  &lt;/React.StrictMode&gt;,
-document.<span class="code--red">getElementById</span>('root')
-)</span></code></pre>
-                    </div>
-
-                    <div class="window">
-                      <pre class="window-pre">
-                <code class="code" data-lines="1"><span class="code--blue">const config: Config = {
- readOnlyChain: ChainId.Mainnet,
- readOnlyUrls: {
-  [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
-  },
-}
-                  
-ReactDOM.<span class="code--red">render</span> (
-  &lt;React.StrictMode&gt;
-  &lt;DAppProvider config={config}&gt;
-  &lt;App /&gt;
-  &lt;/DAppProvider&gt;
-  &lt;/React.StrictMode&gt;,
-document.<span class="code--red">getElementById</span>('root')
-)</span></code></pre>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__btns">
-                  <button class="slider__btn slider__btn--left"></button>
-                  <button class="slider__btn slider__btn--right slider__btn--active"></button>
-                </div>
+              <div data-animations="animate__slideInRight" class="slider__btns animate__animated animate__slideInRight">
+                <button class="slider__btn slider__btn--left"></button>
+                <button class="slider__btn slider__btn--right slider__btn--active"></button>
               </div>
             </div>
           </div>

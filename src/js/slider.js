@@ -1,44 +1,36 @@
-const slider = document.querySelector('.windows');
 const slides = document.querySelectorAll('.window');
-const btns = document.querySelectorAll('.slider__btns');
+const slideActive = document.querySelector('.window--active');
 const btnLeft = document.querySelector('.slider__btn--left');
 const btnRight = document.querySelector('.slider__btn--right');
 
 let init = 0;
-let initMax = 3;
+let initMax = slides.length;
 
-btnRight.addEventListener('click', function (e) {
+btnRight.addEventListener('click', function () {
   if (init < initMax - 1) {
     init++;
-    slider.style.transform = `translateX(-${(100 / initMax) * init}%)`;
+    slides[init - 1].classList.remove('window--active');
+    slides[init].classList.add('window--active');
     btnLeft.classList.add('slider__btn--active');
   } else {
     btnLeft.classList.remove('slider__btn--active');
     btnRight.classList.add('slider__btn--active');
-    slider.style.transform = 'translateX(' + 0 + '%)';
+    slides.forEach(slide => slide.classList.remove('window--active'));
+    slides[0].classList.add('window--active');
     init = 0;
   }
   if (init === initMax - 1) btnRight.classList.remove('slider__btn--active');
 });
 
-btnLeft.addEventListener('click', function (e) {
+btnLeft.addEventListener('click', function () {
   if (init > 0) {
     init--;
-    slider.style.transform = `translateX(-${(100 / initMax) * init}%)`;
+    slides[init + 1].classList.remove('window--active');
+    slides[init].classList.add('window--active');
   }
   if (init <= 0) {
     btnLeft.classList.remove('slider__btn--active');
     btnRight.classList.add('slider__btn--active');
-    slider.style.transform = 'translateX(' + 0 + '%)';
     init = 0;
   }
-});
-
-console.log(slider.offsetWidth);
-
-const setSlideWidth = slide => (slide.style.width = slider.offsetWidth);
-
-window.addEventListener('resize', () => {
-  console.log(slider.offsetWidth);
-  slides.forEach(slide => setSlideWidth(slide));
 });
