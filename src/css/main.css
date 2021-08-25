@@ -142,10 +142,7 @@ html {
         -ms-flex: 1;
             flex: 1;
     height: auto;
-    padding: 88px 24px 40px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; } }
+    padding: 88px 24px 40px; } }
 
 .container--left {
   -webkit-box-align: start;
