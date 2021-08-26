@@ -627,6 +627,13 @@ body .fp-scroller {
       right: 24px;
       height: 40px; } }
 
+.button:before {
+  content: "";
+  display: inline-block;
+  height: 48px;
+  vertical-align: middle;
+  width: 0; }
+
 .button.button--mobile-fixed {
   display: none;
   position: fixed;
