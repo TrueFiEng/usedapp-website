@@ -18,6 +18,9 @@
    height: 60%
    max-height: 300px
 
+  +media(m)
+   height: 250px
+
 .build__option:first-child,
 .build__option:last-child,
   align-self: flex-start
@@ -34,6 +37,9 @@
   +media(m)
    align-self: flex-end
    margin-left: -70%
+  
+  +media(s) 
+   margin-left: -50%
 
 .build__option:nth-child(4)
   +media(m)
@@ -45,3 +51,7 @@
 
   +media(s)
    max-width: 84px
+
+.build__options img:first-child
+  +media(s)
+    max-width: 68px
