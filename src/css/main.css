@@ -132,17 +132,18 @@ html {
     .container {
       padding: 88px 24px 46px; } }
 
-@media (max-width: 900px) {
-  .container--near-footer {
-    padding: 56px 32px 24px; } }
-
-@media (max-width: 600px) {
-  .container--near-footer {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    height: auto;
-    padding: 88px 24px 40px; } }
+.container--near-footer {
+  min-height: unset; }
+  @media (max-width: 900px) {
+    .container--near-footer {
+      padding: 56px 32px 24px; } }
+  @media (max-width: 600px) {
+    .container--near-footer {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      height: auto;
+      padding: 88px 24px 40px; } }
 
 .container--left {
   -webkit-box-align: start;
