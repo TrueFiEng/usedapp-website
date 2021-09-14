@@ -6,8 +6,12 @@
   grid-row-gap: 96px
   margin-top: 48px
 
+  +media(l)
+   margin-top: 0
+   grid-row-gap: 48px
+
   +media(m)
-  grid-column-gap: 0
+   grid-column-gap: 0
 
   +media(s)
    grid-template-columns: 1fr
@@ -47,6 +51,9 @@
   letter-spacing: -0.03em
   color: #23242A
   text-align: left
+
+  +media(l)
+   font-size: 24px
 
   +media(s)
    font-size: 16px
