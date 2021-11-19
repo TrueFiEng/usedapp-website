@@ -2,7 +2,7 @@ var gulp = require('gulp'),
 		del =	require('del'),
 		browserSync =	require('browser-sync'),
 		autoprefixer =	require('gulp-autoprefixer'),
-		sass =	require('gulp-sass');
+		sass = require('gulp-sass')(require('sass'))
 
 gulp.task('sass', function() {
 	return gulp.src('src/sass/**/*.sass')
