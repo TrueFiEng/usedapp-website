@@ -1679,10 +1679,9 @@ body .fp-scroller {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  max-width: 826px;
+  width: 792px;
   max-height: 50vh;
-  padding: 40px;
+  padding: 35px;
   -webkit-border-radius: 12px;
           border-radius: 12px;
   background-color: #ffffff;
@@ -1691,6 +1690,7 @@ body .fp-scroller {
 }
 @media (max-width: 900px) {
   .window {
+    width: 100%;
     max-width: 100%;
     padding: 12px 16px;
   }
@@ -1771,6 +1771,10 @@ body .fp-scroller {
 
 .code--blue {
   color: #1964C3;
+}
+
+.code--gray {
+  color: #9e9e9d;
 }
 
 .code--inline {

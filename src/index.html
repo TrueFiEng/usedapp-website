@@ -269,27 +269,7 @@
     },
   }
     
-  ReactDOM.<span class="code--red">render</span>(
-    &lt;React.StrictMode&gt;
-      &lt;DAppProvider config={config}&gt;
-        &lt;App /&gt;
-      &lt;/DAppProvider&gt;
-    &lt;/React.StrictMode&gt;,
-    document.<span class="code--red">getElementById</span>('root')
-  )
-  <span class="code__lines">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</span></code></pre>
-              </div>
-              <div class="window">
-                <pre
-                  class="window-pre"
-                ><code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
-    readOnlyChain: ChainId.Mainnet,
-    readOnlyUrls: {
-      [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
-    },
-  }
-    
-  <span class="code--red">ReactDOM.render(
+  ReactDOM.render (
     &lt;React.StrictMode&gt;
       &lt;DAppProvider config={config}&gt;
         &lt;App /&gt;
@@ -302,21 +282,41 @@
               <div class="window">
                 <pre
                   class="window-pre"
-                ><code class="code" data-lines="1"><span class="code--red">const</span> config: Config = {
-    readOnlyChain: ChainId.Mainnet,
-    readOnlyUrls: {
-      [ChainId.Mainnet]: 'https://mainnet.infura.io/v3/62687d1a985d4508b2b7a24827551934',
-    },
-  }
-    
-  <span class="code--blue">ReactDOM.render(
-    &lt;React.StrictMode&gt;
-      &lt;DAppProvider config={config}&gt;
-        &lt;App /&gt;
-      &lt;/DAppProvider&gt;
-    &lt;/React.StrictMode&gt;,
-    document.getElementById</span>('root')
-  )
+                ><code class="code" data-lines="1"><span class="code--red">import</span> { formatUnits } from '@ethersproject/units'
+
+<span class="code--red">const</span> DAI = '0x6b175474e89094c44da98b954eedeac495271d0f'
+
+<span class="code--red">export </span><span class="code--blue">function</span> TokenBalance( ) {
+    const { account } = useEthers( )
+    const tokenBalance = useTokenBalance(DAI, account)
+                  
+<span class="code--red">return</span> (
+      &lt;div&gt;
+         {tokenBalance && &lt;p&gt;Balance: {formatUnits(tokenBalance, 18)}&lt;/p&gt;}
+      &lt;/div&gt;
+    )
+}
+
+  <span class="code__lines">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</span></code></pre>
+              </div>
+              <div class="window">
+                <pre
+                  class="window-pre"
+                ><code class="code" data-lines="1"><span class="code--blue">function</span> useTokenBalance (
+  tokenAddress: string | Falsy,
+  address: string | Falsy
+) {
+  <span class="code--red">const</span> [tokenBalance] =
+    useContractCall (
+      address && tokenAddress && {
+          abi: ERC20Interface,<span class="code--gray"> // ABI interface of the called contract</span>
+          address: tokenAddress,<span class="code--gray"> // On-chain address of the deployed contract</span> 
+          method: "balanceOf",<span class="code--gray"> // Method to be called</span> 
+          args: [address],<span class="code--gray"> // Method arguments - address to be checked for balance</span> 
+        }
+    ) ?? [ ];
+ <span class="code--red">return</span> tokenBalance;
+}
   <span class="code__lines">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15</span></code></pre>
               </div>
 
